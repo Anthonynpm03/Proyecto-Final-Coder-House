@@ -1,0 +1,19 @@
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes banner{
+    0%, 30%{
+        background-image: url(../images/img-cards/banner-tablas-1.jpg);
+    }
+    33%, 60%{
+        background-image: url(../images/img-cards/banner-tablas-2.jpg);
+    }
+    66%, 100%{
+        background-image: url(../images/img-cards/banner-tablas-3.jpg);
+    } 
+}

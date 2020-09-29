@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!---WOW/ANIMATE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!---MIS ESTILOS-->
+    <link rel="stylesheet" href="css/main.CSS">
+    <title>Queseriademisinti/Nosotros</title>
+    
+</head>
+
+<body>
+                    <!---LOGO-->
+    <header>
+    <section class="navbar">
+                    <!---REDES-->
+        <nav class="navbar__redes">
+            <ul>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a class="menu__mobile" href="#modalMobile"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+                    <!---BARRA DE BUSQUEDA-->
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>  
+                    <!---MENU NAVBAR-->
+        <nav class="navbar__menu">
+            <ul class="navbar__menuIngreso">
+                <li><a href="#">Ingresa</a></li>
+                <li><a href="#">Registrate</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+             <ul class="navbar__menuOpciones">
+                <li class="navbar__menuOpcionItem"><a href="index.html">Inicio</a></li>
+                <li class="navbar__menuOpcionItem"><a href="nosotros.html">Nosotros</a></li>
+                <li>
+                    <div class="dropdown">
+                        <span class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Menu
+                        </span>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Fiambres</a>
+                          <a class="dropdown-item" href="#">Quesos</a>
+                          <a class="dropdown-item" href="picadas.html">Picadas</a>
+                          <a class="dropdown-item" href="#">Vinos</a>
+                          <a class="dropdown-item" href="#">Gourmet</a>
+                          <a class="dropdown-item" href="#">Sandwiches</a>
+                        
+                        </div>
+                      </div>
+                </li>
+                <li class="navbar__menuOpcionItem"><a href="#">Contacto</a></li>
+            </ul> 
+        </nav> 
+    </section>
+     <!---MODAL MENU MOBILE-->
+     <section id="modalMobile">
+      <a class="modalMobile__Close" href="#"><i class="fas fa-times"></i></a>
+      <ul class="modalMobile__menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Ingresar</a></li>
+          <li><a href="#">Registrate</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+      </ul>
+  </section>
+    </header>
+  <div class="margin__nosotros">
+    <h1>NOSOTROS</h1>
+    <section class="nosotros">
+        <div class="nosotros__logo">
+          <img src="images/logo.png" alt="">
+        </div>
+        <h1 class="nosotros__eslogan">PODES DARTE UN GUSTO!</h1>
+        <div id="carouselExampleCaptions" class="carousel slide nosotros__carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/local1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Paternal</h5>
+                  <p>No te quedes sin visitarnos!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/local2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Monte Castro</h5>
+                  <p>No te quedes sin visitarnos!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/local3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Villa Del parque</h5>
+                  <p>No te quedes sin visitarnos!</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <p class="nostros__texto">Con mas de 10 años en el mercado Argentino y 4 sucursales en el territorio, 
+            en Queseria de mi sin ti contamos con la mejor experiencia y seleccion de fiambres y quesos de alta 
+            calidad para el disfrute seguro de nuestros clientes. Extenso conocimiento en estacionamiento y maduracion 
+            de quesos para poderte ofrecerles a nuestro publico los sabores adecuados para cada ocacion. En los ultimos años 
+            aprendimos mas para vos y pudimos incluir a nuestra gama de productos nuestra muy querida vinoteca, 
+            y asi mismo incursionamos en el mundo boutique y te ofrecemos una linea de condimientos y aderesos gourmet para hacer tu experiencia lo 
+            mas completa posible y que no falte nada en esas picadas tan especiales! Y lo mas importate, contamos con una 
+            atencion al cliente de PRIMERA, donde te atendemos como nos gusta ser atentidos, con amabalidad, educacion, tecnisismo y respeto, 
+            ya que como nuestro nombre lo dice, que seria de nosotros sin ustedes! No dejes de visitarnos! </p>
+    </section>
+  </div>
+    <section class="nosotros__preguntas">
+      <h3>Preguntas Frecuentes</h3>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-preguntas btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ¿Hacen envios a domicilio?
+              </button>
+            </h2>
+          </div>
+    
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              Realizamos envios a domicilio sin costo, para pedidos mayores a $500 y en un rango de 15 cuadras al rededor de cada local.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-preguntas btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ¿Cuanto tiempo de anticipacion debo encargar una picada?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+             Las picadas deben ser encargadas con minimo medio dia de anticipacion siendo abonadas total o parcialmente al momento del encargo.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-preguntas btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                ¿Que metodos de pagos tienen?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              En los locales podes abonar en efectivo, debito, credito y mercado pago! Si compras por este medio tenemos solo la opcion de credito y mercado pago!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+<!---FOOTER-->
+    <footer>
+      <section class="footer__aliados">
+          <ul>
+              <li><img src="images/marcas/bierzo-logo.png" alt=""></li>
+              <li><img src="images/marcas/cagnoli-logo.png" alt=""></li>
+              <li><img src="images/marcas/tonutti-logo.png" alt=""></li>
+              <li><img src="images/marcas/42-logo.jpg" alt=""></li>
+              <li><img src="images/marcas/artesano-png.jpg" alt=""></li>
+              <li><img src="images/marcas/barraza-logo.png" alt=""></li>
+              <li><img src="images/marcas/bocatti-logo.jpg" alt=""></li>
+              <li><img src="images/marcas/montesano-logo.png" alt=""></li>
+              <li><img src="images/marcas/mozzari-logo.png" alt=""></li>
+              <li><img src="images/marcas/paulina-logo.jpg" alt=""></li>
+              <li><img src="images/marcas/puntadelagua-logo.png" alt=""></li>
+              <li><img src="images/marcas/serenisima-logo.png" alt=""></li>
+              <li><img src="images/marcas/Signorello-logo.png" alt=""></li>
+              <li><img src="images/marcas/tregar-logo7.jpg" alt=""></li>
+              <li><img src="images/marcas/veronica-logo.png" alt=""></li>
+              <li><img src="images/marcas/vidal-logo.png" alt=""></li>
+          </ul>
+      </section>
+      <section class="footer__information">  
+          <ul>
+              <h4>Categorias</h4>
+              <li>Vinos</li>
+              <li>Fiambres</li>
+              <li>Quesos</li>
+              <li>Gourmet</li>
+              <li>Tablas</li>
+          </ul>
+          <div>
+          <h4>Tu cuenta</h4>
+          <a href="#">Ingresa</a>
+          </div>
+          <h4> <a href="locales">Locales</a> </h4>
+      </section>
+  
+      <section class="footer__copyright">
+          <div>
+              <h4> <a href="#">QUESERIA DE MI SIN TI</a></h4>
+              <p>HORARIO DE ATENCION: LUNES A VIERNES DE 9:00 - 13:30 Y DE 17:00 A 20:00 SABADOS ABRIMOS TODO EL DIA DE 9:00 A 20:00HRS</p>
+              <p>Copyright 2020 - Anthony Perez</p>
+          </div> 
+      </section>
+  </footer>
+</div>
+<!---WOW-->
+<script src="wow.min.js"></script>
+<script> new WOW().init(); </script>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+</body>
+</html>

@@ -1,0 +1,125 @@
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    .navbar{
+    @include flex(row, wrap,space-between,center);
+    background-color: $colorPrincipal;
+    padding: 2px 30px 0px 30px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
+    /*REDES NAVBAR*/
+    .navbar__redes{
+        width: 10%;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        ul{
+            width: 100%;
+            height: 100%;
+            @include flex(row, wrap,space-around,center);
+            margin-bottom: 0%;
+            li{
+                i{
+                    color: $colorLinks;
+                    font-size: 32px;
+                    opacity: 0.7;
+                    text-shadow: 1px 2px 2px $colorShadowNegro;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+            .menu__mobile{
+                display: none;
+                @media (max-width: 768px) {
+                    display: block;
+                }
+            }
+        }
+    }
+    .btn-outline-success{
+        color:$colorSecundario; 
+        border-color: $colorSecundario;
+        transition: all 300ms ease;
+        &:hover{
+            background-color: $colorSecundario;
+            color: white;
+            transition: all 300ms ease;
+        }
+    }
+    .form-control{
+        @media (max-width: 768px) {
+            width: 70%;
+        }
+    }
+    .navbar__menu{
+        width: 50%;
+        /*MENU INGRESO NAVBAR*/
+        .navbar__menuIngreso{
+            width: 95%;
+            @include flex(row, wrap,flex-end,center);
+            margin-bottom: 0%;
+            a{
+                margin-right: 60px;
+                color: $colorLinks;
+                opacity: 0.8;
+                &:hover{
+                    opacity: 1;
+                    text-decoration: none;
+                }
+            }
+            i{
+                color: $colorLinks;
+                opacity: 0.8;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+        /*MENU PRINCIPAL NAVBAR*/
+        .navbar__menuOpciones{
+            width: 100%;
+            @include flex(row, wrap,space-evenly,center);
+            padding:10px;
+            margin-bottom: 0%;
+            .navbar__menuOpcionItem{
+                a{
+                    color: $colorLinks;
+                    padding: 6px 8px 11px 8px;
+                    font-size: 18px;
+                    opacity: 0.8;
+                    transition: all 1s ease;
+                    &:hover{
+                        opacity: 1;
+                        text-decoration: none;
+                        box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.6);
+                        transition: all 300ms ease;
+                    }
+                }
+            }
+            .dropdown-toggle{
+                color: $colorLinks;
+                cursor: pointer;
+                font-size: 18px;
+                opacity: 0.8;
+            }
+            .dropdown-item{
+                color: black;
+                &:hover{
+                    background-color: rgba(160, 15, 15, 0.3);
+                }
+            }
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+    }
+  
+}

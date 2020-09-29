@@ -1,0 +1,197 @@
+.picadas{
+    width: 100%;
+    @include flex(column,wrap,flex-end,center);
+    display: flex;
+    background-image: url(images/fondo.jpg);
+    h1{
+        color: $colorPrincipal;
+        text-align: center;
+        font-size: 48px;
+        font-weight: bold;
+        background-color: white;
+        width: 100%;
+        padding: 20px;
+        @media (max-width: 768px) {
+            font-size: 32px;
+            margin-bottom: 50px;
+        }
+        &::after{
+            content: "";
+            display: block;
+            margin: auto;
+            width: 0px;
+            height: 10px;
+            border-radius: 16px;
+            background-color:$colorPrincipal; 
+            transition: width 1s;
+            cursor: pointer;
+        }
+        &:hover::after{
+            width: 450px;
+            transition: width 1s;
+            cursor: pointer;
+            @media (max-width: 768px) {
+                width: 80%;
+            }
+        }
+    }
+    .picadas__tabla{
+        width: 70%;
+        height: 350px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        background: linear-gradient(#6b0b0b, #f93f3f);
+        position: relative;
+        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.9);
+        border-bottom-left-radius: 10px;
+        @media (max-width: 768px) {
+            width: 95%;
+            @include flex(row,nowrap,center,center);
+            margin-top: 150px;
+            margin-bottom: 100px;
+            height: 400px;
+        }
+    }
+    .picadas__tablaImg{
+        @include BgImage(cover,center,no-repeat);
+        @include flex(column,wrap,space-between,flex-start);
+        width: 60%;
+        height: 100%;
+        border-radius: 10px;
+        position: absolute;
+        top: -20%;
+        left: -10%;
+        box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+        @media (max-width: 768px) {
+            width: 100%;
+            top: -50%;
+            left: 0;
+            height: 60%;
+        }
+        h2{
+            color: $colorSecundario;
+            margin-left: 20px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+    }
+    .picadas__tablaImg--tabla1{
+        background-image: url(../images/tablas.jpg);
+    }
+    .picadas__tablaImg--tabla2{
+        background-image: url(../images/tabla2.jpg);
+    }
+    .picadas__tablaImg--tabla3{
+        background-image: url(../images/tabla3.jpg);
+    }
+    .picadas__tablaImg--tabla4{
+        background-image: url(../images/tabla4.jpg);
+    }
+    .picadas__tablaBarras{
+        width: 40%;
+        position: absolute; 
+        top: -30%;
+        right: 5%;
+        @media (max-width: 768px) {
+            display: none;
+        }
+        span{
+            font-weight: bold;
+        }
+        .progress{
+            width: 80%;
+            height: 10px;
+            margin-top: 5px;
+        }
+        .progress-bar{
+            background-color: $colorPrincipal;
+        }
+    }
+    .picadas__tablaIngredientes{
+        width: 50%;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        @media (max-width: 768px) {
+            position: unset;
+            width: 90%;
+        }
+        h3{
+            text-align: center;
+            color: $colorSecundario;
+            text-shadow: 1px 2px 2px black;
+            margin-bottom: 5px;
+            @media (max-width: 768px) {
+                font-size: 24px;
+            }
+        }
+        .picadas__tablaingredientes--quesos{
+            @include flex(row,wrap,space-around,center);
+            color: white;
+        }
+        ul{
+            list-style-type: disc;
+        }
+    }
+    .picadas__tablaingredientes--fiambres{
+        @include flex(row,wrap,space-around,center);
+        color: white;
+        ul{
+            list-style-type: disc;
+        }
+    }
+    .picadas__tablaAcompañamientos{
+        ul{
+            list-style-type: disc;
+            width: 100%;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-evenly;
+            li{
+                color: white;
+                font-size: 18px;
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .picadas__tablaCantidad{
+        width: 30%;
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+        @include flex(row,wrap,space-around,center);
+        color: $colorSecundario;
+        font-weight: bold;
+        font-size: 28px;
+        text-shadow: 1px 2px 2px black;
+        @media (max-width: 768px) {
+            width: 100%;
+            text-align: left;
+            justify-content: space-between;
+            padding: 0px 10px;
+            top: -2%;
+            bottom: auto;
+            left: auto;
+            right: 0px;
+        }
+    }
+    .picadas__tablaBtn{
+        position: absolute;
+        right: 0;
+        bottom: -7%;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        color: $colorPrincipal;
+        background-color: $colorSecundario;
+        border-radius: 8px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.9);
+        &:hover{
+            text-decoration: none;
+            color:#f1f1f1;
+        }
+    }
+}

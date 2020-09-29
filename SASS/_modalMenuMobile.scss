@@ -1,0 +1,38 @@
+#modalMobile{
+    background-color: $colorPrincipal; 
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 3;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.5s;
+    &:target{
+        opacity: 1;
+        right: 0;
+        transition: right 0.5s;
+    }
+    .modalMobile__Close{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        z-index: 2;
+        }
+    .modalMobile__menu{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        a{
+            color: $colorLinks;
+            font-size: 24px;
+        }
+       
+    }
+}

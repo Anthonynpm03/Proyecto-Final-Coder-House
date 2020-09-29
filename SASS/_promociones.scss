@@ -1,0 +1,127 @@
+.promociones{
+    h2{
+        @extend %titulosSecciones;
+        &::after{
+            content: "";
+            display: block;
+            margin: auto;
+            width: 0px;
+            height: 10px;
+            border-radius: 16px;
+            background-color:#a00f0f; 
+            transition: width 1s;
+        }
+        &:hover::after{
+            width: 350px;
+            transition: width 1s;
+        }
+    }
+    .promociones__contenedor{
+        width: 100%;
+        margin: auto;
+        background-image: url(../images/fondo-promocion.jpg);
+        @include BgImage(cover,center,no-repeat);
+        border-radius: 16px;
+        margin-top: 20px;
+        height: 100vh;
+        @include flex(row,wrap,space-evenly,center);
+        overflow-x: scroll;
+        @media (max-width: 780px) {
+            width: 80%;
+        }
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .promociones__contenedorCard{
+            display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: 225px 200px 60px;
+            grid-template-areas: "img" "text" "stats";
+            border-radius: 18px;
+            background-color: white;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            transition: 0.5s ease;
+            cursor: pointer;
+            @media (max-width: 768px) {
+                grid-template-columns: 280px;
+            }
+            &:hover{
+                transform: translateY(-15px);
+                box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.8);
+            }
+            .promociones__contenedorCardCombo1,.promociones__contenedorCardCombo2,.promociones__contenedorCardCombo3,.promociones__contenedorCardCombo4,.promociones__contenedorCardCombo5,.promociones__contenedorCardCombo6,.promociones__contenedorCardCombo7{
+                grid-area: img;
+                border-top-right-radius: 16px;
+                border-top-left-radius: 16px;
+                @include BgImage(cover,center,no-repeat);
+            }
+            .promociones__contenedorCardCombo1{
+                background-image: url(../img-cards-products/combo-1.jpg);
+            }
+            .promociones__contenedorCardCombo2{
+                background-image: url(../img-cards-products/combo-2.jpg);
+            }
+            .promociones__contenedorCardCombo3{
+                background-image: url(../img-cards-products/combo-3.jpg);
+            }
+            .promociones__contenedorCardCombo4{
+                background-image: url(../img-cards-products/combo-4.jpg);
+            }
+            .promociones__contenedorCardCombo5{
+                background-image: url(../img-cards-products/combo-5.jpg);
+            }
+            .promociones__contenedorCardCombo6{
+                background-image: url(../img-cards-products/promo-1.jpg);
+            }
+            .promociones__contenedorCardCombo7{
+                background-image: url(../img-cards-products/promo-2.jpg);
+            }
+            img{
+                border-radius: 16px;
+            }
+            .promociones__contenedorCardText{
+                grid-area: text;
+                align-self: center;
+               .combo{
+                width: 100%;
+                display: flex;
+                span{
+                    margin-left: 21px;
+                    color: $colorPrincipal;
+                    font-weight: bold;
+                }
+               }
+               h3{
+                font-weight: bold;
+                color: black;
+                font-size: 28px;
+               }
+               p{
+                padding: 0px 25px;
+                opacity: 0.85;
+               }
+            }
+            .promociones__contenedorCardStats{
+                grid-area: stats;
+                height: 100%;
+                background-color: $colorPrincipal;
+                border-bottom-right-radius:18px;
+                border-bottom-left-radius: 18px;
+                color: white;
+                ul{
+                    height: 100%;
+                    @include flex(row,nowrap,space-evenly,center);
+                    margin-bottom: 0px;
+                    padding: 5px 15px;
+                }
+                span{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

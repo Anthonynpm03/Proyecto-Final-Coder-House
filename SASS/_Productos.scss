@@ -1,0 +1,200 @@
+.banner__tablas{
+    width: 100%;
+    height: 50vh;
+    margin-top: 350px;
+    animation: banner 10s infinite linear alternate;
+    @include BgImage(cover,center,no-repeat);
+
+    @media (max-width: 768px) {
+        margin-top: 20px;
+    }
+    .banner__tablasCapa{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        .banner_tablasCapaInfo{
+            height: 100%;
+            @include flex(column,wrap,space-evenly,center);
+            h2{
+                color: white;
+                font-size: 48px;
+                letter-spacing: 2px;
+                word-spacing: 15px;
+                @media (max-width: 768px) {
+                    font-size: 32px;
+                }
+            }
+            p{
+                color: white;
+                font-size: 32px;
+                padding: 0px 20px;
+                text-align: center;
+                @media (max-width: 768px) {
+                    font-size: 24px;
+                    text-align: center;
+                }
+            }
+            a{
+                text-decoration: none;
+                text-align: center;
+                background-color: $colorPrincipal;
+                color: $colorLinks;
+                font-size: 24px;
+                padding: 10px 20px;
+                border-radius: 6px;
+            }
+        }
+    }
+    
+}
+.cards{
+    background-color: #fbfbff;
+    padding: 10px 0px;
+    .card__productos{
+        width: 80%;
+        margin-left:50px;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 12% repeat(3, 25%) 12%;
+        @media (max-width: 768px) {
+            margin-left: 0px;
+            margin: auto;
+            grid-template-columns: 100%;
+            grid-template-rows: 30% 70%;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 4px $colorShadowNegro;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .card__productosImg{
+            grid-area: 1/1/6/2;
+            @media (max-width: 768px) {
+                grid-area: unset;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                @media (max-width: 768px) {
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 0px;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 0px;
+                }
+            }
+            }
+            .card__productosText{
+                grid-area: 2/2/5/3;
+                padding: 0px 10px;
+                background-color: #00000036;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                color: $colorPrincipal;
+                @include flex(column,wrap,space-around,center);
+                position: relative;
+                @media (max-width: 768px) {
+                    grid-area: unset;
+                    background-color: #fbfbff;
+                }
+
+                h2{
+                    font-size: 40px;
+                    @media (max-width: 768px) {
+                        color: $colorSecundario;
+                        text-shadow: 1px 1px 2px black;
+                    }
+                }
+                p{
+                    font-size: 24px;
+                    font-weight: bold;
+                    @media (max-width: 768px) {
+                        text-align: justify;
+                        padding: 0px 10px;
+                        margin-bottom: 0px;
+                        opacity: 0.85;
+                    }
+                }
+                a{
+                    @extend %btn-producto;
+                    right: 10px;
+                    @media (max-width: 768px) {
+                        position: unset;
+                        margin-bottom: 5px;
+                    }
+                }
+        }
+       
+            
+            }
+    .card2{
+        @include flex(row,wrap,flex-end,center);
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+        @media (max-width: 768px) {
+            margin-right: 0px;
+        }
+        .card__productosImg2{
+            grid-area: 1/1/6/2;
+            @media (max-width: 768px) {
+                grid-area: unset;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8); 
+                    }
+                }
+            .card__productosText2{
+                grid-area: 2/2/5/3;
+                padding: 0px 10px;
+                background-color: #00000036;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                color: $colorPrincipal;
+                @include flex(column,wrap,space-around,center);
+                position: relative;
+                @media (max-width: 768px) {
+                    grid-area: unset;
+                    background-color: #fbfbff;
+                }
+                h2{
+                    font-size: 40px;
+                    @media (max-width: 768px) {
+                        color: $colorSecundario;
+                        text-shadow: 1px 1px 2px black;
+                    }
+                }
+                p{
+                    font-size: 24px;
+                    font-weight: bold;
+                    @media (max-width: 768px) {
+                        text-align: justify;
+                        padding: 0px 10px;
+                        margin-bottom: 0px;
+                        opacity: 0.85;
+                    }
+                }
+                a{
+                   @extend %btn-producto;
+                    left: 10px;
+                    @media (max-width: 768px) {
+                        position: unset;
+                        margin-bottom: 5px;
+                    }
+                    
+                }
+            }
+        }
+}

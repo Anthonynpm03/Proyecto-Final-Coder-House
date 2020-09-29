@@ -1,0 +1,130 @@
+body{
+    background-color: white;
+}
+.quesos{
+    .menuLateral{
+        width: 18%;
+        height: 50vh;
+        background-image: url(../images/fondoquesos.jpg);
+        position: fixed;
+        left: 0;
+        top: 25%;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 10%;
+        box-shadow: 2px 2px 7px $colorShadowNegro;
+        @include flex(column,wrap,center,center);
+        @media (max-width: 768px) {
+            display: none;
+        }
+        ul{
+            width: 90%;
+            height: 80%;
+            @include flex(column,wrap,space-around,flex-end);
+            li{
+                transition: all 0.5s;
+                a{
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-shadow: 1px 1px 2px black;
+                    &:hover{
+                     text-decoration: none;
+                    }
+                }
+                &:hover{
+                    text-decoration: none;
+                    transform: translateY(-5px);
+                    transition: all 0.5s;
+                }    
+            }
+        }
+    }
+    .cardsQuesos{
+        width: 82%;
+        margin: auto;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        h2{
+            @extend %titulosSecciones;
+        }
+        h3{
+            margin-left: 60px;
+            color: $colorSecundario;
+            text-shadow: 1px 2px 2px black;
+            font-size: 36px;
+            margin-left: 16%;
+        }
+        .cardsQuesos__cremosos{
+            margin-left: 12%;
+            @include flex(row,wrap,space-between,center);
+            @media (max-width: 768px) {
+                margin-left: 0;
+            }
+            .cremososCard{
+                margin-top: 20px;
+                background-color: #f1f1f1;
+                border-radius: 6px;
+                width: 32%;
+                height: 70vh;
+                position: relative;
+                @include flex(column,wrap,space-between,center);
+                @media (max-width: 768px) {
+                    width: 49%;
+                    margin-top: 50px;
+                }
+                .cremososCard__Img{
+                    width: 100%;
+                    height: 40%;
+                    background-image: url(../images/quesos/puntadelagua.jpg);
+                    @include BgImage(cover,center,repeat);
+                }
+                .cremososCard__Text{
+                    width: 100%;
+                    h4{
+                        text-align: center;
+                        font-weight: bold;
+                        color: $colorPrincipal;
+                    }
+                    p{
+                        margin-bottom: 6px;
+                        font-weight: bold;
+                        color: rgba(0, 0, 0, 0.7);
+                        padding: 0px 10px;
+                    }
+                }
+                .cremososCard__tabla{
+                    width: 100%;
+                    .cremososCard__tablaTitulo{
+                        font-weight: bold;
+                        color: $colorPrincipal;
+                        padding: 0px 10px;
+                    }
+                    .cremososCard__tablaListas{
+                        width: 100%;
+                        @include flex(row,nowrap,flex-start,center);
+                        font-size: 16px;
+                        padding-left: 10px;
+                        ul{
+                            margin-left: 10px;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+                .cremososCard__Btn{
+                    position: absolute;
+                    bottom: 15px;
+                    right: 15px;
+                    padding: 6px 12px;
+                    border-radius: 4px;
+                    background-color: $colorPrincipal;
+                    color: White;
+                    @media (max-width: 768px) {
+                        right: 25%;
+                        bottom: -50px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.opiniones{
+    margin-top: 20px;
+    h2{
+        @extend %titulosSecciones;
+        &::after{
+            content: "";
+            display: block;
+            margin: auto;
+            width: 0px;
+            height: 10px;
+            border-radius: 16px;
+            background-color:#a00f0f; 
+            transition: width 1s;
+        }
+        &:hover::after{
+            width: 800px;
+            transition: width 1s;
+        }
+    }
+    .opiniones__clientes{
+        background-color:rgba(0, 0, 0, 0.2);
+        width: 70%;
+        margin: auto;
+        @include flex(column,wrap,center,center);
+        @media (max-width: 780px) {
+            width: 100%;
+        }
+        li{
+            @media (max-width: 780px){
+                &:nth-child(4){display: none;}
+                &:nth-child(5){display: none;}
+                &:nth-child(6){display: none;}
+            }
+        }
+        img{
+            margin-top: 20px;
+            width: 100%;
+            @media (max-width: 780px) {
+                height: 100px;
+             }
+        }
+    }
+}

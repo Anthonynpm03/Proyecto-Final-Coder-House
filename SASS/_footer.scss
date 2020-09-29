@@ -1,0 +1,37 @@
+footer{
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    .footer__aliados{
+        ul{
+            @include flex(row,wrap,space-evenly,center);
+            padding: 10px 0px;
+            cursor: pointer;
+          
+        }
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $colorLinks;
+    }
+    .footer__information{
+        @include flex(row,wrap,space-around,flex-start);
+        padding: 20px;
+        h4{
+            @media (max-width: 768px) {
+                font-size: 16px;
+            } 
+        }
+    }
+    .footer__copyright{
+        text-align: center;
+        padding: 10px;
+        @media (max-width: 768px) {
+            font-size: 12px;
+            padding: 10px 0px;
+        }
+    }
+}

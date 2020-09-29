@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!---WOW/ANIMATE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!---MIS ESTILOS-->
+    <link rel="stylesheet" href="css/main.CSS">
+    <title>Queseriademisinti</title>
+    
+</head>
+
+<body>
+                    <!---LOGO-->
+    <header>
+    <section class="navbar">
+                    <!---REDES-->
+        <nav class="navbar__redes">
+            <ul>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a class="menu__mobile" href="#modalMobile"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+                    <!---BARRA DE BUSQUEDA-->
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>  
+                    <!---MENU NAVBAR-->
+        <nav class="navbar__menu">
+            <ul class="navbar__menuIngreso">
+                <li><a href="#">Ingresa</a></li>
+                <li><a href="#">Registrate</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+             <ul class="navbar__menuOpciones">
+                <li class="navbar__menuOpcionItem"><a href="index.html">Inicio</a></li>
+                <li class="navbar__menuOpcionItem"><a href="nosotros.html">Nosotros</a></li>
+                <li>
+                    <div class="dropdown">
+                        <span class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Menu
+                        </span>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Fiambres</a>
+                          <a class="dropdown-item" href="#">Quesos</a>
+                          <a class="dropdown-item" href="picadas.html">Picadas</a>
+                          <a class="dropdown-item" href="#">Vinos</a>
+                          <a class="dropdown-item" href="#">Gourmet</a>
+                          <a class="dropdown-item" href="#">Sandwiches</a>
+                        
+                        </div>
+                      </div>
+                </li>
+                <li class="navbar__menuOpcionItem"><a href="#">Contacto</a></li>
+            </ul> 
+        </nav> 
+    </section>
+    <!---MODAL MENU MOBILE-->
+    <section id="modalMobile">
+        <a class="modalMobile__Close" href="#"><i class="fas fa-times"></i></a>
+        <ul class="modalMobile__menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Ingresar</a></li>
+            <li><a href="#">Registrate</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+    </section>
+    </header>
+    <section class="quesos">
+        <div class="menuLateral">
+            <ul>
+                <li><a href="#cremosos">Cremosos</a></li>
+                <li><a href="#">Port-salud</a></li>
+                <li><a href="#">Muzzarela</a></li>
+                <li><a href="#">Semiduros</a></li>
+                <li><a href="#">Para Rallar</a></li>
+                <li><a href="#">Otros</a></li>
+            </ul>
+        </div>
+        <div class="cardsQuesos">
+            <div><h2>QUESOS</h2></div>
+            <h3>Cremosos</h3>
+            <div class="cardsQuesos__cremosos">
+                <!---CARD CREMOSOS-->
+                <!---PUNTA DEL AGUA-->
+                <div class="cremososCard" id="cremosos">
+                    <div class="cremososCard__Img"></div>
+                    <div class="cremososCard__Text">
+                        <h4>Punta Del Agua</h4>
+                        <p>Cremoso clasico de uso multiple de facil coccion.</p>
+                    </div>
+                    <div class="cremososCard__tabla">
+                        <div class="cremososCard__tablaTitulo"><h5>Tabla Nutricional</h5></div>
+                        <div class="cremososCard__tablaListas">
+                            <ul>
+                                <li>Kcalorias</li>
+                                <li>Carbohidratos</li>
+                                <li>Proteinas</li>
+                                <li>Fibra</li>
+                                <li>Sodio</li>
+                            </ul>
+                            <ul>
+                                <li>290gr</li>
+                                <li>0gr</li>
+                                <li>17gr</li>
+                                <li>0gr</li>
+                                <li>450mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cremososCard__Btn">
+                        <span>COMPRAR</span>
+                    </div>   
+                </div>
+                <!---PUNTA DEL AGUA-->
+                <div class="cremososCard">
+                    <div class="cremososCard__Img"></div>
+                    <div class="cremososCard__Text">
+                        <h4>Punta Del Agua</h4>
+                        <p>Cremoso clasico de uso multiple de facil coccion.</p>
+                    </div>
+                    <div class="cremososCard__tabla">
+                        <div class="cremososCard__tablaTitulo"><h5>Tabla Nutricional</h5></div>
+                        <div class="cremososCard__tablaListas">
+                            <ul>
+                                <li>Kcalorias</li>
+                                <li>Carbohidratos</li>
+                                <li>Proteinas</li>
+                                <li>Fibra</li>
+                                <li>Sodio</li>
+                            </ul>
+                            <ul>
+                                <li>290gr</li>
+                                <li>0gr</li>
+                                <li>17gr</li>
+                                <li>0gr</li>
+                                <li>450mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cremososCard__Btn">
+                        <span>COMPRAR</span>
+                    </div>   
+                </div>
+                 <!---PUNTA DEL AGUA-->
+                 <div class="cremososCard">
+                    <div class="cremososCard__Img"></div>
+                    <div class="cremososCard__Text">
+                        <h4>Punta Del Agua</h4>
+                        <p>Cremoso clasico de uso multiple de facil coccion.</p>
+                    </div>
+                    <div class="cremososCard__tabla">
+                        <div class="cremososCard__tablaTitulo"><h5>Tabla Nutricional</h5></div>
+                        <div class="cremososCard__tablaListas">
+                            <ul>
+                                <li>Kcalorias</li>
+                                <li>Carbohidratos</li>
+                                <li>Proteinas</li>
+                                <li>Fibra</li>
+                                <li>Sodio</li>
+                            </ul>
+                            <ul>
+                                <li>290gr</li>
+                                <li>0gr</li>
+                                <li>17gr</li>
+                                <li>0gr</li>
+                                <li>450mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cremososCard__Btn">
+                        <span>COMPRAR</span>
+                    </div>   
+                </div>
+                 <!---PUNTA DEL AGUA-->
+                 <div class="cremososCard">
+                    <div class="cremososCard__Img"></div>
+                    <div class="cremososCard__Text">
+                        <h4>Punta Del Agua</h4>
+                        <p>Cremoso clasico de uso multiple de facil coccion.</p>
+                    </div>
+                    <div class="cremososCard__tabla">
+                        <div class="cremososCard__tablaTitulo"><h5>Tabla Nutricional</h5></div>
+                        <div class="cremososCard__tablaListas">
+                            <ul>
+                                <li>Kcalorias</li>
+                                <li>Carbohidratos</li>
+                                <li>Proteinas</li>
+                                <li>Fibra</li>
+                                <li>Sodio</li>
+                            </ul>
+                            <ul>
+                                <li>290gr</li>
+                                <li>0gr</li>
+                                <li>17gr</li>
+                                <li>0gr</li>
+                                <li>450mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cremososCard__Btn">
+                        <span>COMPRAR</span>
+                    </div>   
+                </div>
+            </div>
+            <h3>Port-Salut</h3>
+            <div class="cardsQuesos__cremosos">
+                <!---CARD CREMOSOS-->
+                <!---PUNTA DEL AGUA-->
+                <div class="cremososCard">
+                    <div class="cremososCard__Img"></div>
+                    <div class="cremososCard__Text">
+                        <h4>Punta Del Agua</h4>
+                        <p>Cremoso clasico de uso multiple de facil coccion.</p>
+                    </div>
+                    <div class="cremososCard__tabla">
+                        <div class="cremososCard__tablaTitulo"><h5>Tabla Nutricional</h5></div>
+                        <div class="cremososCard__tablaListas">
+                            <ul>
+                                <li>Kcalorias</li>
+                                <li>Carbohidratos</li>
+                                <li>Proteinas</li>
+                                <li>Fibra</li>
+                                <li>Sodio</li>
+                            </ul>
+                            <ul>
+                                <li>290gr</li>
+                                <li>0gr</li>
+                                <li>17gr</li>
+                                <li>0gr</li>
+                                <li>450mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cremososCard__Btn">
+                        <span>COMPRAR</span>
+                    </div>   
+                </div>
+                <!---PUNTA DEL AGUA-->
+                <div class="cremososCard">
+                    <div class="cremososCard__Img"></div>
+                    <div class="cremososCard__Text">
+                        <h4>Punta Del Agua</h4>
+                        <p>Cremoso clasico de uso multiple de facil coccion.</p>
+                    </div>
+                    <div class="cremososCard__tabla">
+                        <div class="cremososCard__tablaTitulo"><h5>Tabla Nutricional</h5></div>
+                        <div class="cremososCard__tablaListas">
+                            <ul>
+                                <li>Kcalorias</li>
+                                <li>Carbohidratos</li>
+                                <li>Proteinas</li>
+                                <li>Fibra</li>
+                                <li>Sodio</li>
+                            </ul>
+                            <ul>
+                                <li>290gr</li>
+                                <li>0gr</li>
+                                <li>17gr</li>
+                                <li>0gr</li>
+                                <li>450mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cremososCard__Btn">
+                        <span>COMPRAR</span>
+                    </div>   
+                </div>
+                 <!---PUNTA DEL AGUA-->
+                 <div class="cremososCard">
+                    <div class="cremososCard__Img"></div>
+                    <div class="cremososCard__Text">
+                        <h4>Punta Del Agua</h4>
+                        <p>Cremoso clasico de uso multiple de facil coccion.</p>
+                    </div>
+                    <div class="cremososCard__tabla">
+                        <div class="cremososCard__tablaTitulo"><h5>Tabla Nutricional</h5></div>
+                        <div class="cremososCard__tablaListas">
+                            <ul>
+                                <li>Kcalorias</li>
+                                <li>Carbohidratos</li>
+                                <li>Proteinas</li>
+                                <li>Fibra</li>
+                                <li>Sodio</li>
+                            </ul>
+                            <ul>
+                                <li>290gr</li>
+                                <li>0gr</li>
+                                <li>17gr</li>
+                                <li>0gr</li>
+                                <li>450mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cremososCard__Btn">
+                        <span>COMPRAR</span>
+                    </div>   
+                </div>
+                 <!---PUNTA DEL AGUA-->
+                 <div class="cremososCard">
+                    <div class="cremososCard__Img"></div>
+                    <div class="cremososCard__Text">
+                        <h4>Punta Del Agua</h4>
+                        <p>Cremoso clasico de uso multiple de facil coccion.</p>
+                    </div>
+                    <div class="cremososCard__tabla">
+                        <div class="cremososCard__tablaTitulo"><h5>Tabla Nutricional</h5></div>
+                        <div class="cremososCard__tablaListas">
+                            <ul>
+                                <li>Kcalorias</li>
+                                <li>Carbohidratos</li>
+                                <li>Proteinas</li>
+                                <li>Fibra</li>
+                                <li>Sodio</li>
+                            </ul>
+                            <ul>
+                                <li>290gr</li>
+                                <li>0gr</li>
+                                <li>17gr</li>
+                                <li>0gr</li>
+                                <li>450mg</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cremososCard__Btn">
+                        <span>COMPRAR</span>
+                    </div>   
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+                            <!---FOOTER-->
+    <footer>
+        <section class="footer__aliados">
+            <ul>
+                <li><img src="images/marcas/bierzo-logo.png" alt=""></li>
+                <li><img src="images/marcas/cagnoli-logo.png" alt=""></li>
+                <li><img src="images/marcas/tonutti-logo.png" alt=""></li>
+                <li><img src="images/marcas/42-logo.jpg" alt=""></li>
+                <li><img src="images/marcas/artesano-png.jpg" alt=""></li>
+                <li><img src="images/marcas/barraza-logo.png" alt=""></li>
+                <li><img src="images/marcas/bocatti-logo.jpg" alt=""></li>
+                <li><img src="images/marcas/montesano-logo.png" alt=""></li>
+                <li><img src="images/marcas/mozzari-logo.png" alt=""></li>
+                <li><img src="images/marcas/paulina-logo.jpg" alt=""></li>
+                <li><img src="images/marcas/puntadelagua-logo.png" alt=""></li>
+                <li><img src="images/marcas/serenisima-logo.png" alt=""></li>
+                <li><img src="images/marcas/Signorello-logo.png" alt=""></li>
+                <li><img src="images/marcas/tregar-logo7.jpg" alt=""></li>
+                <li><img src="images/marcas/veronica-logo.png" alt=""></li>
+                <li><img src="images/marcas/vidal-logo.png" alt=""></li>
+            </ul>
+        </section>
+        <section class="footer__information">  
+            <ul>
+                <h4>Categorias</h4>
+                <li>Vinos</li>
+                <li>Fiambres</li>
+                <li>Quesos</li>
+                <li>Gourmet</li>
+                <li>Tablas</li>
+            </ul>
+            <div>
+            <h4>Tu cuenta</h4>
+            <a href="#">Ingresa</a>
+            </div>
+            <h4> <a href="locales">Locales</a> </h4>
+        </section>
+    
+        <section class="footer__copyright">
+            <div>
+                <h4> <a href="#">QUESERIA DE MI SIN TI</a></h4>
+                <p>HORARIO DE ATENCION: LUNES A VIERNES DE 9:00 - 13:30 Y DE 17:00 A 20:00 SABADOS ABRIMOS TODO EL DIA DE 9:00 A 20:00HRS</p>
+                <p>Copyright 2020 - Anthony Perez</p>
+            </div> 
+        </section>
+    </footer>
+</div>
+<!---WOW-->
+<script src="wow.min.js"></script>
+<script> new WOW().init(); </script>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+</body>
+</html>

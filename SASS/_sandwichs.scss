@@ -1,0 +1,161 @@
+.sandwich{
+    margin-top: 20px;
+    .sandwich__titulo{
+        h2{
+           @extend %titulosSecciones;
+        }
+        p{
+            font-size: 24px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+    }
+    .sandwich__cards{
+        margin-top: 20Px;
+        height: 75vh;
+        background-color: white;
+        padding: 0px 20px;
+        position: relative;
+        overflow-x: auto;
+        overflow-y: hidden;
+        ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            overflow-x: auto;
+            background-color: #fbfbff;
+            &::-webkit-scrollbar{
+                height: 10px;
+            }
+            &::-webkit-scrollbar-thumb{
+                background-color: #797979;
+                border-radius: 20px;
+                border: 2px solid #f1f2f3;
+            }
+            &::-webkit-scrollbar-track{
+                border-radius: 10px;
+            }
+        }
+        .sandwich__cardsItem{
+            min-width: 30%;
+            height: 250px;
+            margin-right: 20px;
+            @include flex(column,wrap,space-around,center);
+            border: 6px solid #a00f0f;
+            border-radius: 18px;
+            box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+            cursor: pointer;
+            @include BgImage(cover,center,no-repeat);
+            @media (max-width: 768px) {
+                position: relative;
+                min-width: 80%;
+                height: 150px;
+            }
+            .sandwich__cardsText{
+                height: 100%;
+                padding: 20px;
+                @include flex(column,nowrap,center,center);
+                @media (max-width: 768px) {
+                    position: absolute;
+                    bottom: -110%;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    border-bottom-left-radius: 18px;
+                    border-bottom-right-radius: 18px;
+                    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+                    height: 150px;
+                    flex-wrap: nowrap;
+                }
+                h3{
+                    color: $colorPrincipal;
+                    visibility: hidden;
+                    @media (max-width: 768px) {
+                        visibility: visible;
+                        width: 100%;
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-align: left;
+                    }
+                }
+                p{
+                    color: $colorPrincipal;
+                    visibility: hidden;
+                    @media (max-width: 768px) {
+                        visibility: visible;
+                    } 
+                }
+            }
+            &:hover{
+                .sandwich__cardsText{
+                    transform: translateY(133%);
+                    transition: all 800ms ease;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    border-bottom-left-radius: 18px;
+                    border-bottom-right-radius: 18px;
+                    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+                    height: 60%;
+                    @media (max-width: 768px) {
+                        transform: translateY(0%);
+                        transition: none;
+                        height: 150px;
+                    }
+                    h3{
+                        visibility: visible;
+                    }
+                    p{
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+        .sandwich__cardsItem--lomo{
+            background-image: url(../images/sandwich/sandwich-lomo.jpg);
+        }
+        .sandwich__cardsItem--jamon{
+            background-image: url(../images/sandwich/sandwich-jamon.jpg);
+        }
+        .sandwich__cardsItem--salame{
+            background-image: url(../images/sandwich/sandwich-salame.jpg);
+        }
+        .sandwich__cardsItem--crudo{
+            background-image: url(../images/sandwich/sandwich-crudo.jpg);
+        }
+        .sandwich__cardsItem--pastron{
+            background-image: url(../images/sandwich/sandwich-pastron.jpg);
+        }
+        .sandwich__opciones{
+            position: absolute;
+            bottom: 7%;
+            left: 20%;
+            margin-top: 10px;
+            @media (max-width: 768px) {
+                @include flex(column,nowrap,center,space-evenly);
+                margin-top: 0px;
+                left: 0;
+                padding: 10px;
+            }
+            
+            span{
+                padding: 20px;
+                font-size: 20px;
+                background-color:$colorPrincipal;
+                color: white;
+                border-radius: 12px;
+                box-shadow: 1px 2px 2px $colorShadowNegro;
+                @media (max-width: 768px) {
+                    padding: 10px 20px;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+            img{
+                width: 60px;
+                height: 35px;
+            }
+        }
+    }
+}

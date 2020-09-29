@@ -1,0 +1,114 @@
+.bannerprincipal{
+    width: 100%;
+    height: 75vh;
+    background-image: url(../images/banner_grande.jpg);
+    @include BgImage(cover, center, no-repeat);
+    .bannerprincipal__capa{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        .bannerprincipal__capaInfo{
+            height: 100%;
+            padding:20px;
+            @include flex(column,wrap,space-between,center);
+            h1{
+                color: white;
+                text-align: center;
+                @media (max-width: 768px) {
+                    font-size: 28px;
+                }
+            }
+            h2{
+                font-size: 30px;
+                color: white;
+                text-align: center;
+                @media (max-width: 768px) {
+                    font-size: 24px;
+                }
+            }
+            .bannerprincipal__capaBotones{
+                width: 30%;
+                @include flex(row,wrap,space-evenly,center);
+                .bannerprincipal__capaBotones--take{
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    background-color: $colorPrincipal;
+                    border-radius: 12px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    box-shadow: 2px 5px 10px $colorShadowPrincipal;
+                    @media (max-width: 768px) {
+                        padding: 10px 5px;
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
+                }
+                .bannerprincipal__capaBotones--delivery{
+                    padding: 10px 20px;
+                    background-color: rgba(255, 255, 255, 0.7);
+                    border-radius: 12px;
+                    box-shadow: 2px 5px 10px $colorShadowPrincipal;
+                    text-decoration: none;
+                    color: $colorPrincipal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: all 300ms ease;
+                    &:hover{
+                        background-color: $colorPrincipal;
+                        color: $colorLinks;
+                        text-decoration: none;
+                        transition: all 400ms ease;
+                    }
+                }
+            }
+        }
+    }
+}
+.bannerprincipal__redes{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #a00f0f;
+    @include flex(row,wrap,space-evenly,center);
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    .bannerprincipal__redes--promociones{
+        padding: 5px 20px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 12px;
+        box-shadow: 2px 5px 10px $colorShadowPrincipal;
+        text-decoration: none;
+        color: $colorPrincipal;
+        font-weight: bold;
+        font-size: 24px;
+        transition: all 300ms ease;
+        &:hover{
+            background-color: $colorSecundario;
+            color: $colorLinks;
+            text-decoration: none;
+            transition: all 400ms ease;
+        }
+    }
+    i{
+        font-size: 32px;
+        color: $colorSecundario;
+        transition: all 300ms ease;
+        &:hover{
+            color: rgba(255, 206, 55, 0.8);
+            transition: all 300ms ease;
+            transform: scale(1.3);
+        }
+    }
+    .bannerprincipal__redesAppDelivery{
+        img{
+            &:hover{
+                transition: all 300ms ease;
+                transform: scale(1.3);
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
