@@ -1745,7 +1745,7 @@ body {
   margin-left: 60px;
   color: #ffce37;
   text-shadow: 1px 2px 2px black;
-  font-size: 36px;
+  font-size: 40px;
   margin-left: 16%;
 }
 .quesos .cardsQuesos .cardsQuesos__cremosos {
@@ -1878,4 +1878,168 @@ body {
 }
 .quesos .cardsQuesos #muzza {
   margin-top: 20px;
+}
+.quesos .cardsQuesos .muzza_vidal {
+  background-image: url(../images/quesos/muzzavidal.jpg);
+}
+.quesos .cardsQuesos .muzza__barraza {
+  background-image: url(../images/quesos/muzzabarraza.jpg);
+}
+.quesos .cardsQuesos .muzza__tonutti {
+  background-image: url(../images/quesos/muzzatonutti.jpg);
+}
+.quesos .cardsQuesos .muzza__dontim {
+  background-image: url(../images/quesos/MUZZADONTIM.jpg);
+}
+.quesos .cardsQuesos #semiduros {
+  margin-bottom: 20px;
+}
+.quesos .cardsQuesos .cardquesos__semiduros {
+  margin-left: 12%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .quesos .cardsQuesos .cardquesos__semiduros {
+    margin-left: 0;
+  }
+}
+.quesos .cardsQuesos .cardquesos__semiduros .semidurosCard {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  width: 45%;
+  height: 85vh;
+  padding: 30px 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .semidurosCard__titulo h4 {
+  text-align: center;
+  font-weight: bold;
+  color: #a00f0f;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .semidurosCard__img {
+  width: 100%;
+  height: 35vh;
+  margin-bottom: 10px;
+  border: 4px outset rgba(0, 0, 0, 0.2);
+}
+.quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .mardelplata {
+  background-image: url(../images/quesos/mardelplata.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .pategras {
+  background-image: url(../images/quesos/pategras.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .fontina {
+  background-image: url(../images/quesos/fontina.jpg);
+}
+.quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .criollo {
+  background-image: url(../images/quesos/criollo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .semidurosCard__text p {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0px 10px;
+  text-align: justify;
+}
+.quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .semidurosCard__Btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #a00f0f;
+  color: White;
+}
+@media (max-width: 768px) {
+  .quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .semidurosCard__Btn {
+    right: 25%;
+    bottom: -50px;
+  }
+}
+.quesos .cardsQuesos .cardquesos__duros {
+  margin-left: 12%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .quesos .cardsQuesos .cardquesos__duros {
+    margin-left: 0;
+  }
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  width: 80%;
+  height: 85vh;
+  padding: 30px 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard .durosCard__titulo h4 {
+  text-align: center;
+  font-weight: bold;
+  color: #a00f0f;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard .durosCard__img {
+  width: 100%;
+  height: 35vh;
+  margin-bottom: 10px;
+  border: 4px outset rgba(0, 0, 0, 0.2);
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard .sardos {
+  background-image: url(../images/quesos/sardos.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard .durosCard__text p {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0px 10px;
+  text-align: justify;
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard .durosCard__Btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #a00f0f;
+  color: White;
+}
+@media (max-width: 768px) {
+  .quesos .cardsQuesos .cardquesos__duros .durosCard .durosCard__Btn {
+    right: 25%;
+    bottom: -50px;
+  }
 }
