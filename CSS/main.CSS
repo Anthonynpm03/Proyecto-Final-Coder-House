@@ -1289,7 +1289,7 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
 
 footer {
   margin-top: 10px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 footer .footer__aliados ul {
