@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -21,7 +22,7 @@ ul {
   bottom: 10px;
 }
 
-.quesos .cardsQuesos h2, .margin__nosotros h1, .video h2, .opiniones h2, .promociones h2, .sandwich .sandwich__titulo h2, .Carrousel h2 {
+.quesos .cardsQuesos h2, .margin__nosotros h1, .video h2, .opiniones h2, #promociones h2, .sandwich .sandwich__titulo h2, .Carrousel h2 {
   text-align: center;
   margin-top: 30px;
   color: #a00f0f;
@@ -30,7 +31,7 @@ ul {
   cursor: pointer;
 }
 @media (max-width: 768px) {
-  .quesos .cardsQuesos h2, .margin__nosotros h1, .video h2, .opiniones h2, .promociones h2, .sandwich .sandwich__titulo h2, .Carrousel h2 {
+  .quesos .cardsQuesos h2, .margin__nosotros h1, .video h2, .opiniones h2, #promociones h2, .sandwich .sandwich__titulo h2, .Carrousel h2 {
     font-size: 28px;
   }
 }
@@ -1081,7 +1082,7 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
   height: 35px;
 }
 
-.promociones h2::after {
+#promociones h2::after {
   content: "";
   display: block;
   margin: auto;
@@ -1091,11 +1092,11 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
   background-color: #a00f0f;
   transition: width 1s;
 }
-.promociones h2:hover::after {
+#promociones h2:hover::after {
   width: 350px;
   transition: width 1s;
 }
-.promociones .promociones__contenedor {
+#promociones .promociones__contenedor {
   width: 100%;
   margin: auto;
   background-image: url(../images/fondo-promocion.jpg);
@@ -1113,14 +1114,14 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
   overflow-x: scroll;
 }
 @media (max-width: 780px) {
-  .promociones .promociones__contenedor {
+  #promociones .promociones__contenedor {
     width: 80%;
   }
 }
-.promociones .promociones__contenedor::-webkit-scrollbar {
+#promociones .promociones__contenedor::-webkit-scrollbar {
   display: none;
 }
-.promociones .promociones__contenedor .promociones__contenedorCard {
+#promociones .promociones__contenedor .promociones__contenedorCard {
   display: grid;
   grid-template-columns: 300px;
   grid-template-rows: 225px 200px 60px;
@@ -1135,15 +1136,15 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
   cursor: pointer;
 }
 @media (max-width: 768px) {
-  .promociones .promociones__contenedor .promociones__contenedorCard {
+  #promociones .promociones__contenedor .promociones__contenedorCard {
     grid-template-columns: 280px;
   }
 }
-.promociones .promociones__contenedor .promociones__contenedorCard:hover {
+#promociones .promociones__contenedor .promociones__contenedorCard:hover {
   transform: translateY(-15px);
   box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.8);
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo1, .promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo2, .promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo3, .promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo4, .promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo5, .promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo6, .promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo7 {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo1, #promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo2, #promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo3, #promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo4, #promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo5, #promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo6, #promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo7 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: img;
@@ -1153,55 +1154,55 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo1 {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo1 {
   background-image: url(../img-cards-products/combo-1.jpg);
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo2 {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo2 {
   background-image: url(../img-cards-products/combo-2.jpg);
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo3 {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo3 {
   background-image: url(../img-cards-products/combo-3.jpg);
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo4 {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo4 {
   background-image: url(../img-cards-products/combo-4.jpg);
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo5 {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo5 {
   background-image: url(../img-cards-products/combo-5.jpg);
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo6 {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo6 {
   background-image: url(../img-cards-products/promo-1.jpg);
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo7 {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardCombo7 {
   background-image: url(../img-cards-products/promo-2.jpg);
 }
-.promociones .promociones__contenedor .promociones__contenedorCard img {
+#promociones .promociones__contenedor .promociones__contenedorCard img {
   border-radius: 16px;
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardText {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardText {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: text;
   align-self: center;
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardText .combo {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardText .combo {
   width: 100%;
   display: flex;
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardText .combo span {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardText .combo span {
   margin-left: 21px;
   color: #a00f0f;
   font-weight: bold;
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardText h3 {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardText h3 {
   font-weight: bold;
   color: black;
   font-size: 28px;
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardText p {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardText p {
   padding: 0px 25px;
   opacity: 0.85;
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardStats {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardStats {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: stats;
@@ -1211,7 +1212,7 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
   border-bottom-left-radius: 18px;
   color: white;
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardStats ul {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardStats ul {
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -1221,7 +1222,7 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
   margin-bottom: 0px;
   padding: 5px 15px;
 }
-.promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardStats span {
+#promociones .promociones__contenedor .promociones__contenedorCard .promociones__contenedorCardStats span {
   font-size: 20px;
   font-weight: bold;
 }
@@ -1682,11 +1683,11 @@ footer .footer__copyright {
 }
 
 body {
-  background-color: white;
+  background-color: #fbfbff;
 }
 
 .quesos .menuLateral {
-  width: 18%;
+  width: 17%;
   height: 50vh;
   background-image: url(../images/fondoquesos.jpg);
   position: fixed;
@@ -1734,22 +1735,21 @@ body {
 }
 .quesos .cardsQuesos {
   width: 82%;
-  margin: auto;
+  margin-left: 18%;
 }
 @media (max-width: 768px) {
   .quesos .cardsQuesos {
     width: 100%;
+    margin-left: 0;
   }
 }
 .quesos .cardsQuesos h3 {
   margin-left: 60px;
   color: #ffce37;
   text-shadow: 1px 2px 2px black;
-  font-size: 40px;
-  margin-left: 16%;
+  font-size: 48px;
 }
 .quesos .cardsQuesos .cardsQuesos__cremosos {
-  margin-left: 12%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1762,10 +1762,11 @@ body {
   }
 }
 .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard {
+  background-color: white;
   margin-top: 20px;
   margin-right: 10px;
-  background-color: #f1f1f1;
   border-radius: 6px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
   padding: 5px 0px;
   width: 32%;
   height: 75vh;
@@ -1778,8 +1779,9 @@ body {
 }
 @media (max-width: 768px) {
   .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard {
-    width: 49%;
+    width: 47%;
     margin-top: 50px;
+    margin-right: 4px;
   }
 }
 .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard .cremososCard__Img {
@@ -1843,11 +1845,12 @@ body {
 .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard .cremososCard__Btn {
   position: absolute;
   bottom: 15px;
-  right: 15px;
+  right: 10px;
   padding: 6px 12px;
   border-radius: 4px;
   background-color: #a00f0f;
   color: White;
+  font-weight: bold;
 }
 @media (max-width: 768px) {
   .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard .cremososCard__Btn {
@@ -1856,7 +1859,7 @@ body {
   }
 }
 .quesos .cardsQuesos #Port-Salut {
-  margin-top: 20px;
+  margin-top: 60px;
 }
 .quesos .cardsQuesos .barraza__conSal {
   background-image: url(../images/quesos/barrazaconsal.jpg);
@@ -1877,7 +1880,7 @@ body {
   background-image: url(../images/quesos/magrotonutti.jpg);
 }
 .quesos .cardsQuesos #muzza {
-  margin-top: 20px;
+  margin-top: 60px;
 }
 .quesos .cardsQuesos .muzza_vidal {
   background-image: url(../images/quesos/muzzavidal.jpg);
@@ -1894,8 +1897,10 @@ body {
 .quesos .cardsQuesos #semiduros {
   margin-bottom: 20px;
 }
+.quesos .cardsQuesos #semiduros {
+  margin-top: 60px;
+}
 .quesos .cardsQuesos .cardquesos__semiduros {
-  margin-left: 12%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1908,6 +1913,7 @@ body {
   }
 }
 .quesos .cardsQuesos .cardquesos__semiduros .semidurosCard {
+  background-color: white;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
   width: 45%;
   height: 85vh;
@@ -1924,14 +1930,13 @@ body {
   text-align: center;
   font-weight: bold;
   color: #a00f0f;
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 40px;
 }
 .quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .semidurosCard__img {
   width: 100%;
   height: 35vh;
   margin-bottom: 10px;
-  border: 4px outset rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px #a00f0f;
 }
 .quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .mardelplata {
   background-image: url(../images/quesos/mardelplata.jpg);
@@ -1969,6 +1974,7 @@ body {
   border-radius: 4px;
   background-color: #a00f0f;
   color: White;
+  font-weight: bold;
 }
 @media (max-width: 768px) {
   .quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .semidurosCard__Btn {
@@ -1976,8 +1982,10 @@ body {
     bottom: -50px;
   }
 }
+.quesos .cardsQuesos #pararallar {
+  margin-top: 60px;
+}
 .quesos .cardsQuesos .cardquesos__duros {
-  margin-left: 12%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1990,10 +1998,11 @@ body {
   }
 }
 .quesos .cardsQuesos .cardquesos__duros .durosCard {
+  background-color: white;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
-  width: 80%;
+  width: 90%;
   height: 85vh;
-  padding: 30px 15px;
+  padding: 15px 15px;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -2011,15 +2020,21 @@ body {
 }
 .quesos .cardsQuesos .cardquesos__duros .durosCard .durosCard__img {
   width: 100%;
-  height: 35vh;
-  margin-bottom: 10px;
-  border: 4px outset rgba(0, 0, 0, 0.2);
+  height: 50%;
+  margin-bottom: 5px;
+  box-shadow: 2px 2px 4px #a00f0f;
 }
 .quesos .cardsQuesos .cardquesos__duros .durosCard .sardos {
   background-image: url(../images/quesos/sardos.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard .parmesano {
+  background-image: url(../images/quesos/parmesano.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .quesos .cardsQuesos .cardquesos__duros .durosCard .durosCard__text p {
   margin-bottom: 6px;
@@ -2027,6 +2042,9 @@ body {
   color: rgba(0, 0, 0, 0.7);
   padding: 0px 10px;
   text-align: justify;
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard .durosCard__text span {
+  color: #a00f0f;
 }
 .quesos .cardsQuesos .cardquesos__duros .durosCard .durosCard__Btn {
   position: absolute;
@@ -2036,10 +2054,165 @@ body {
   border-radius: 4px;
   background-color: #a00f0f;
   color: White;
+  font-weight: bold;
 }
 @media (max-width: 768px) {
   .quesos .cardsQuesos .cardquesos__duros .durosCard .durosCard__Btn {
     right: 25%;
     bottom: -50px;
   }
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard2 {
+  background-color: white;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  width: 40%;
+  height: 70vh;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard2 .durosCard2__titulo h4 {
+  text-align: center;
+  font-weight: bold;
+  color: #a00f0f;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard2 .durosCard2__img {
+  width: 70%;
+  height: 40%;
+  margin-bottom: 5px;
+  box-shadow: 2px 2px 4px #a00f0f;
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard2 .provolone {
+  background-image: url(../images/quesos/provolone.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard2 .regianito {
+  background-image: url(../images/quesos/regianito.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard2 .durosCard2__text p {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0px 10px;
+  text-align: justify;
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard2 .durosCard2__text span {
+  color: #a00f0f;
+}
+.quesos .cardsQuesos .cardquesos__duros .durosCard2 .durosCard2__Btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #a00f0f;
+  color: White;
+  font-weight: bold;
+}
+.quesos .cardsQuesos #otros {
+  margin-top: 60px;
+}
+.quesos .cardsQuesos .cardquesos__otros {
+  margin-top: 20Px;
+  background-color: white;
+  padding: 0px 20px;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 40px;
+}
+.quesos .cardsQuesos .cardquesos__otros ul {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  overflow-x: auto;
+  background-color: white;
+}
+.quesos .cardsQuesos .cardquesos__otros ul::-webkit-scrollbar {
+  height: 10px;
+  margin-top: 10px;
+}
+.quesos .cardsQuesos .cardquesos__otros ul::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+.quesos .cardsQuesos .cardquesos__otros ul::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.quesos .cardsQuesos .cardquesos__otros ul .cardOtros {
+  min-width: 25%;
+  height: 90%;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 18px;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.quesos .cardsQuesos .cardquesos__otros ul .cardOtros .cardOtros__img {
+  width: 90%;
+  height: 50%;
+  margin-bottom: 5px;
+  box-shadow: 2px 2px 4px #a00f0f;
+}
+.quesos .cardsQuesos .cardquesos__otros ul .cardOtros .ahumado {
+  background-image: url(../images/quesos/ahumado.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.quesos .cardsQuesos .cardquesos__otros ul .cardOtros .condimentado {
+  background-image: url(../images/quesos/condimentado.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.quesos .cardsQuesos .cardquesos__otros ul .cardOtros .provoleta {
+  background-image: url(../images/quesos/provoleta.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.quesos .cardsQuesos .cardquesos__otros ul .cardOtros .quesocabra {
+  background-image: url(../images/quesos/quesocabra.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.quesos .cardsQuesos .cardquesos__otros ul .cardOtros .bocconcinos {
+  background-image: url(../images/quesos/bocconcinos.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.quesos .cardsQuesos .cardquesos__otros ul .cardOtros .burrata {
+  background-image: url(../images/quesos/burrata.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.quesos .cardsQuesos .cardquesos__otros ul .cardOtros h4 {
+  text-align: center;
+  font-weight: bold;
+  color: #a00f0f;
+  font-size: 24px;
+}
+.quesos .cardsQuesos .cardquesos__otros ul .cardOtros span {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #a00f0f;
+  color: White;
+  font-weight: bold;
 }

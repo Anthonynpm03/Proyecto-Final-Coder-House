@@ -1,9 +1,9 @@
 body{
-    background-color: white;
+    background-color: #fbfbff;
 }
 .quesos{
     .menuLateral{
-        width: 18%;
+        width: 17%;
         height: 50vh;
         background-image: url(../images/fondoquesos.jpg);
         position: fixed;
@@ -41,9 +41,10 @@ body{
     }
     .cardsQuesos{
         width: 82%;
-        margin: auto;
+        margin-left: 18%;
         @media (max-width: 768px) {
             width: 100%;
+            margin-left: 0;
         }
         h2{
             @extend %titulosSecciones;
@@ -52,28 +53,28 @@ body{
             margin-left: 60px;
             color: $colorSecundario;
             text-shadow: 1px 2px 2px black;
-            font-size: 40px;
-            margin-left: 16%;
+            font-size: 48px;
         }
         .cardsQuesos__cremosos{
-            margin-left: 12%;
             @include flex(row,wrap,center,center);
             @media (max-width: 768px) {
                 margin-left: 0;
             }
             .cremososCard{
+                background-color: white;
                 margin-top: 20px;
                 margin-right: 10px;
-                background-color: #f1f1f1;
                 border-radius: 6px;
+                box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
                 padding: 5px 0px;
                 width: 32%;
                 height: 75vh;
                 position: relative;
                 @include flex(column,wrap,space-between,center);
                 @media (max-width: 768px) {
-                    width: 49%;
+                    width: 47%;
                     margin-top: 50px;
+                    margin-right: 4px;
                 }
                 .cremososCard__Img{
                     width: 100%;
@@ -130,11 +131,12 @@ body{
                 .cremososCard__Btn{
                     position: absolute;
                     bottom: 15px;
-                    right: 15px;
+                    right: 10px;
                     padding: 6px 12px;
                     border-radius: 4px;
                     background-color: $colorPrincipal;
                     color: White;
+                    font-weight: bold;
                     @media (max-width: 768px) {
                         right: 25%;
                         bottom: -50px;
@@ -143,7 +145,7 @@ body{
             }
         }
         #Port-Salut{
-            margin-top: 20px;
+            margin-top: 60px;
         }
         .barraza__conSal{
             background-image: url(../images/quesos/barrazaconsal.jpg);
@@ -164,7 +166,7 @@ body{
             background-image: url(../images/quesos/magrotonutti.jpg);
         }
         #muzza{
-            margin-top: 20px;
+            margin-top: 60px;
         }
         .muzza_vidal{
             background-image: url(../images/quesos/muzzavidal.jpg);
@@ -181,13 +183,16 @@ body{
         #semiduros{
             margin-bottom: 20px;
         }
+        #semiduros{
+            margin-top: 60px;
+        }
         .cardquesos__semiduros{
-            margin-left: 12%;
             @include flex(row,wrap,space-around,center);
             @media (max-width: 768px) {
                 margin-left: 0;
             }
             .semidurosCard{
+                background-color: white;
                 box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
                 width: 45%;
                 height: 85vh;
@@ -200,15 +205,14 @@ body{
                         text-align: center;
                         font-weight: bold;
                         color: $colorPrincipal;
-                        font-size: 32px;
-                        margin-bottom: 10px;
+                        font-size: 40px;
                     }
                 }
                 .semidurosCard__img{
                     width: 100%;
                     height: 35vh;
                     margin-bottom: 10px;
-                    border: 4px outset rgba(0, 0, 0, 0.2);
+                    box-shadow: 2px 2px 4px $colorPrincipal;
                 }
                 .mardelplata{
                     background-image: url(../images/quesos/mardelplata.jpg);
@@ -242,6 +246,7 @@ body{
                     border-radius: 4px;
                     background-color: $colorPrincipal;
                     color: White;
+                    font-weight: bold;
                     @media (max-width: 768px) {
                         right: 25%;
                         bottom: -50px;
@@ -249,17 +254,20 @@ body{
                 }
             }
         }
+        #pararallar{
+            margin-top: 60px;
+        }
         .cardquesos__duros{
-            margin-left: 12%;
             @include flex(row,wrap,space-around,center);
             @media (max-width: 768px) {
                 margin-left: 0;
             }
             .durosCard{
+                background-color: white;
                 box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
-                width: 80%;
+                width: 90%;
                 height: 85vh;
-                padding: 30px 15px;
+                padding: 15px 15px;
                 margin-bottom: 10px;
                 @include flex(column,wrap,space-evenly,center);
                 position: relative;
@@ -274,15 +282,17 @@ body{
                 }
                 .durosCard__img{
                     width: 100%;
-                    height: 35vh;
-                    margin-bottom: 10px;
-                    border: 4px outset rgba(0, 0, 0, 0.2);
+                    height: 50%;
+                    margin-bottom: 5px;
+                    box-shadow: 2px 2px 4px $colorPrincipal;
                 }
                 .sardos{
                     background-image: url(../images/quesos/sardos.jpg);
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: cover;
+                    @include BgImage(cover,center,no-repeat);
+                }
+                .parmesano{
+                    background-image: url(../images/quesos/parmesano.jpg);
+                    @include BgImage(cover,center,no-repeat);
                 }
                 .durosCard__text{
                     p{
@@ -291,6 +301,9 @@ body{
                         color: rgba(0, 0, 0, 0.7);
                         padding: 0px 10px;
                         text-align: justify;
+                    }
+                    span{
+                        color: $colorPrincipal;
                     }
                 }
                 .durosCard__Btn{
@@ -301,9 +314,144 @@ body{
                     border-radius: 4px;
                     background-color: $colorPrincipal;
                     color: White;
+                    font-weight: bold;
                     @media (max-width: 768px) {
                         right: 25%;
                         bottom: -50px;
+                    }
+                }
+            }
+            .durosCard2{
+                background-color: white;
+                box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+                width: 40%;
+                height: 70vh;
+                padding: 10px 10px;
+                margin-bottom: 10px;
+                @include flex(column,wrap,space-between,center);
+                position: relative;
+                .durosCard2__titulo{
+                    h4{
+                        text-align: center;
+                        font-weight: bold;
+                        color: $colorPrincipal;
+                        font-size: 28px;
+                        margin-bottom: 10px;
+                    }
+                }
+                .durosCard2__img{
+                    width: 70%;
+                    height: 40%;
+                    margin-bottom: 5px;
+                    box-shadow: 2px 2px 4px $colorPrincipal;
+                }
+                .provolone{
+                    background-image: url(../images/quesos/provolone.png);
+                    @include BgImage(cover,top,no-repeat);
+                }
+                .regianito{
+                    background-image: url(../images/quesos/regianito.jpg);
+                    @include BgImage(cover,top,no-repeat);
+                }
+                .durosCard2__text{
+                    p{
+                        margin-bottom: 6px;
+                        font-weight: bold;
+                        color: rgba(0, 0, 0, 0.7);
+                        padding: 0px 10px;
+                        text-align: justify;
+                    }
+                    span{
+                        color: $colorPrincipal;
+                    }
+                }
+                .durosCard2__Btn{
+                    padding: 6px 12px;
+                    border-radius: 4px;
+                    background-color: $colorPrincipal;
+                    color: White;
+                    font-weight: bold;
+                }
+            }
+        }
+        #otros{
+            margin-top: 60px;
+        }
+        .cardquesos__otros{
+            margin-top: 20Px;
+            background-color: white;
+            padding: 0px 20px;
+            position: relative;
+            overflow-x: auto;
+            overflow-y: hidden;
+            margin-bottom: 40px;
+            ul{
+                width: 100%;
+                height: 300px;
+                display: flex;
+                overflow-x: auto;
+                background-color: white;
+                &::-webkit-scrollbar{
+                    height: 10px;
+                    margin-top: 10px;
+                }
+                &::-webkit-scrollbar-thumb{
+                    background-color: #797979;
+                    border-radius: 20px;
+                    border: 2px solid #f1f2f3;
+                }
+                &::-webkit-scrollbar-track{
+                    border-radius: 10px;
+                }
+                .cardOtros{
+                    min-width: 25%;
+                    height: 90%;
+                    margin-right: 20px;
+                    @include flex(column,wrap,space-around,center);
+                    border-radius: 18px;
+                    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+                    .cardOtros__img{
+                        width: 90%;
+                        height: 50%;
+                        margin-bottom: 5px;
+                        box-shadow: 2px 2px 4px $colorPrincipal;
+                    }
+                    .ahumado{
+                        background-image: url(../images/quesos/ahumado.jpg);
+                        @include BgImage(cover,top,no-repeat);
+                    }
+                    .condimentado{
+                        background-image: url(../images/quesos/condimentado.jpg);
+                        @include BgImage(cover,center,no-repeat);
+                    }
+                    .provoleta{
+                        background-image: url(../images/quesos/provoleta.jpg);
+                        @include BgImage(cover,center,no-repeat);
+                    }
+                    .quesocabra{
+                        background-image: url(../images/quesos/quesocabra.jpg);
+                        @include BgImage(cover,center,no-repeat);
+                    }
+                    .bocconcinos{
+                        background-image: url(../images/quesos/bocconcinos.jpg);
+                        @include BgImage(cover,center,no-repeat);
+                    }
+                    .burrata{
+                        background-image: url(../images/quesos/burrata.jpg);
+                        @include BgImage(cover,center,no-repeat);
+                    }
+                    h4{
+                        text-align: center;
+                        font-weight: bold;
+                        color: $colorPrincipal;
+                        font-size: 24px;  
+                    }
+                    span{
+                        padding: 6px 12px;
+                        border-radius: 4px;
+                        background-color: $colorPrincipal;
+                        color: White;
+                        font-weight: bold;
                     }
                 }
             }
