@@ -103,6 +103,9 @@ body{
                         text-align: center;
                         font-weight: bold;
                         color: $colorPrincipal;
+                        @media (max-width: 768px) {
+                            font-size: 20px;
+                        }
                     }
                     p{
                         margin-bottom: 6px;
@@ -120,15 +123,26 @@ body{
                         font-weight: bold;
                         color: $colorPrincipal;
                         padding: 0px 10px;
+                        h5{
+                            @media (max-width: 768px) {
+                                font-size: 18px;
+                            }
+                        }
                     }
                     .cremososCard__tablaListas{
                         width: 100%;
                         @include flex(row,nowrap,flex-start,center);
                         font-size: 16px;
                         padding-left: 10px;
+                        @media (max-width: 768px) {
+                            font-size: 12px;
+                        }
                         ul{
                             margin-left: 10px;
                             margin-bottom: 0px;
+                            @media (max-width: 768px) {
+                                font-size: 12px;
+                            }
                         }
                     }
                 }
@@ -225,9 +239,12 @@ body{
                 }
                 .semidurosCard__img{
                     width: 100%;
-                    height: 35vh;
+                    height: 50%;
                     margin-bottom: 10px;
                     box-shadow: 2px 2px 4px $colorPrincipal;
+                    @media (max-width: 768px) {
+                        height: 40%;
+                    }
                 }
                 .mardelplata{
                     background-image: url(../images/quesos/mardelplata.jpg);
@@ -239,6 +256,7 @@ body{
                 }
                 .fontina{
                     background-image: url(../images/quesos/fontina.jpg);
+                    @include BgImage(cover,center,no-repeat);
                 }
                 .criollo{
                     background-image: url(../images/quesos/criollo.jpg);
@@ -267,7 +285,7 @@ body{
                     font-weight: bold;
                     @media (max-width: 768px) {
                         right: 10px;
-                        bottom: 10px;
+                        bottom: 6px;
                     }
                 }
             }
@@ -290,7 +308,6 @@ body{
                     width: 100%;
                     height: 70vh;
                     margin-top: 20px;
-                    flex-wrap: nowrap;
                 }
                 .durosCard__titulo{
                     h4{
@@ -328,6 +345,7 @@ body{
                         text-align: justify;
                         @media (max-width: 768px) {
                             font-weight: normal;
+                            font-size: 12px;
                         }
                     }
                     span{
@@ -363,7 +381,6 @@ body{
                     width: 95%;
                     height: 50vh;
                     margin-top: 20px;
-                    flex-wrap: nowrap;
                 }
                 .durosCard2__titulo{
                     h4{
@@ -371,13 +388,15 @@ body{
                         font-weight: bold;
                         color: $colorPrincipal;
                         font-size: 28px;
-                        margin-bottom: 10px;
+                        @media (max-width: 768px) {
+                            font-size: 20px;
+                            margin-bottom: 0;
+                        }
                     }
                 }
                 .durosCard2__img{
                     width: 70%;
                     height: 40%;
-                    margin-bottom: 5px;
                     box-shadow: 2px 2px 4px $colorPrincipal;
                 }
                 .provolone{
@@ -397,12 +416,14 @@ body{
                         text-align: justify;
                         @media (max-width: 768px) {
                             font-weight: normal;
+                            font-size: 12px;
                         }
                     }
                     span{
                         color: $colorPrincipal;
                         @media (max-width: 768px) {
                             font-weight: bold;
+                            font-size: 12px;
                         }
                     }
                 }
@@ -492,7 +513,10 @@ body{
                         text-align: center;
                         font-weight: bold;
                         color: $colorPrincipal;
-                        font-size: 22px;  
+                        font-size: 22px;
+                        @media (max-width: 768px) {
+                            font-size: 18px;
+                        } 
                     }
                     span{
                         padding: 6px 12px;

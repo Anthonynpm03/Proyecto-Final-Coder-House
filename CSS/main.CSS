@@ -1815,6 +1815,11 @@ body {
   font-weight: bold;
   color: #a00f0f;
 }
+@media (max-width: 768px) {
+  .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard .cremososCard__Text h4 {
+    font-size: 20px;
+  }
+}
 .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard .cremososCard__Text p {
   margin-bottom: 6px;
   font-weight: bold;
@@ -1834,6 +1839,11 @@ body {
   color: #a00f0f;
   padding: 0px 10px;
 }
+@media (max-width: 768px) {
+  .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard .cremososCard__tabla .cremososCard__tablaTitulo h5 {
+    font-size: 18px;
+  }
+}
 .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard .cremososCard__tabla .cremososCard__tablaListas {
   width: 100%;
   display: flex;
@@ -1844,9 +1854,19 @@ body {
   font-size: 16px;
   padding-left: 10px;
 }
+@media (max-width: 768px) {
+  .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard .cremososCard__tabla .cremososCard__tablaListas {
+    font-size: 12px;
+  }
+}
 .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard .cremososCard__tabla .cremososCard__tablaListas ul {
   margin-left: 10px;
   margin-bottom: 0px;
+}
+@media (max-width: 768px) {
+  .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard .cremososCard__tabla .cremososCard__tablaListas ul {
+    font-size: 12px;
+  }
 }
 .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard .cremososCard__Btn {
   position: absolute;
@@ -1957,9 +1977,14 @@ body {
 }
 .quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .semidurosCard__img {
   width: 100%;
-  height: 35vh;
+  height: 50%;
   margin-bottom: 10px;
   box-shadow: 2px 2px 4px #a00f0f;
+}
+@media (max-width: 768px) {
+  .quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .semidurosCard__img {
+    height: 40%;
+  }
 }
 .quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .mardelplata {
   background-image: url(../images/quesos/mardelplata.jpg);
@@ -1975,6 +2000,9 @@ body {
 }
 .quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .fontina {
   background-image: url(../images/quesos/fontina.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .criollo {
   background-image: url(../images/quesos/criollo.jpg);
@@ -2007,7 +2035,7 @@ body {
 @media (max-width: 768px) {
   .quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .semidurosCard__Btn {
     right: 10px;
-    bottom: 10px;
+    bottom: 6px;
   }
 }
 .quesos .cardsQuesos #pararallar {
@@ -2039,7 +2067,6 @@ body {
     width: 100%;
     height: 70vh;
     margin-top: 20px;
-    flex-wrap: nowrap;
   }
 }
 .quesos .cardsQuesos .cardquesos__duros .durosCard .durosCard__titulo h4 {
@@ -2083,6 +2110,7 @@ body {
 @media (max-width: 768px) {
   .quesos .cardsQuesos .cardquesos__duros .durosCard .durosCard__text p {
     font-weight: normal;
+    font-size: 12px;
   }
 }
 .quesos .cardsQuesos .cardquesos__duros .durosCard .durosCard__text span {
@@ -2124,7 +2152,6 @@ body {
     width: 95%;
     height: 50vh;
     margin-top: 20px;
-    flex-wrap: nowrap;
   }
 }
 .quesos .cardsQuesos .cardquesos__duros .durosCard2 .durosCard2__titulo h4 {
@@ -2132,12 +2159,16 @@ body {
   font-weight: bold;
   color: #a00f0f;
   font-size: 28px;
-  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .quesos .cardsQuesos .cardquesos__duros .durosCard2 .durosCard2__titulo h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
 }
 .quesos .cardsQuesos .cardquesos__duros .durosCard2 .durosCard2__img {
   width: 70%;
   height: 40%;
-  margin-bottom: 5px;
   box-shadow: 2px 2px 4px #a00f0f;
 }
 .quesos .cardsQuesos .cardquesos__duros .durosCard2 .provolone {
@@ -2162,6 +2193,7 @@ body {
 @media (max-width: 768px) {
   .quesos .cardsQuesos .cardquesos__duros .durosCard2 .durosCard2__text p {
     font-weight: normal;
+    font-size: 12px;
   }
 }
 .quesos .cardsQuesos .cardquesos__duros .durosCard2 .durosCard2__text span {
@@ -2170,6 +2202,7 @@ body {
 @media (max-width: 768px) {
   .quesos .cardsQuesos .cardquesos__duros .durosCard2 .durosCard2__text span {
     font-weight: bold;
+    font-size: 12px;
   }
 }
 .quesos .cardsQuesos .cardquesos__duros .durosCard2 .durosCard2__Btn {
@@ -2280,6 +2313,11 @@ body {
   font-weight: bold;
   color: #a00f0f;
   font-size: 22px;
+}
+@media (max-width: 768px) {
+  .quesos .cardsQuesos .cardquesos__otros ul .cardOtros h4 {
+    font-size: 18px;
+  }
 }
 .quesos .cardsQuesos .cardquesos__otros ul .cardOtros span {
   padding: 6px 12px;
