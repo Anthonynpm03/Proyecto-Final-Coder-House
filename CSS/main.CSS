@@ -1755,6 +1755,11 @@ body {
   font-size: 48px;
   margin-top: 30px;
 }
+@media (max-width: 768px) {
+  .quesos .cardsQuesos h3 {
+    margin-left: 10px;
+  }
+}
 .quesos .cardsQuesos .cardsQuesos__cremosos {
   display: flex;
   flex-direction: row;
