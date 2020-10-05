@@ -1,5 +1,8 @@
 .opiniones{
     margin-top: 20px;
+    @media (width: 768px) {
+        display: none;
+    }
     h2{
         @extend %titulosSecciones;
         &::after{

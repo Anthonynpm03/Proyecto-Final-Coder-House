@@ -263,6 +263,11 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .bannerprincipal .bannerprincipal__capa .bannerprincipal__capaInfo {
+    justify-content: center;
+  }
+}
 .bannerprincipal .bannerprincipal__capa .bannerprincipal__capaInfo h1 {
   color: white;
   text-align: center;
@@ -280,6 +285,7 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
 @media (max-width: 768px) {
   .bannerprincipal .bannerprincipal__capa .bannerprincipal__capaInfo h2 {
     font-size: 24px;
+    margin-bottom: 10px;
   }
 }
 .bannerprincipal .bannerprincipal__capa .bannerprincipal__capaInfo .bannerprincipal__capaBotones {
@@ -302,8 +308,8 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
 }
 @media (max-width: 768px) {
   .bannerprincipal .bannerprincipal__capa .bannerprincipal__capaInfo .bannerprincipal__capaBotones .bannerprincipal__capaBotones--take {
-    padding: 10px 5px;
-    font-size: 16px;
+    padding: 10px 10px;
+    font-size: 14px;
     margin-bottom: 10px;
   }
 }
@@ -391,7 +397,7 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
 }
 @media (max-width: 768px) {
   #Modal {
-    height: 80vh;
+    height: 100vh;
   }
 }
 #Modal:target {
@@ -690,6 +696,7 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
 @media (max-width: 768px) {
   .banner__tablas .banner__tablasCapa .banner_tablasCapaInfo h2 {
     font-size: 32px;
+    margin-bottom: 0;
   }
 }
 .banner__tablas .banner__tablasCapa .banner_tablasCapaInfo p {
@@ -700,8 +707,9 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
 }
 @media (max-width: 768px) {
   .banner__tablas .banner__tablasCapa .banner_tablasCapaInfo p {
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
+    margin-bottom: 0px;
   }
 }
 .banner__tablas .banner__tablasCapa .banner_tablasCapaInfo a {
@@ -717,6 +725,7 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
 .cards {
   background-color: #fbfbff;
   padding: 10px 0px;
+  width: 100%;
 }
 .cards .card__productos {
   width: 80%;
@@ -820,8 +829,6 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  display: flex;
-  justify-content: flex-end;
   margin-right: 50px;
 }
 @media (max-width: 768px) {
@@ -920,6 +927,16 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
   position: relative;
   overflow-x: auto;
   overflow-y: hidden;
+}
+@media (max-width: 768px) {
+  .sandwich .sandwich__cards {
+    height: 500px;
+  }
+}
+@media (width: 768px) {
+  .sandwich .sandwich__cards {
+    height: 50vh;
+  }
 }
 .sandwich .sandwich__cards ul {
   width: 100%;
@@ -1229,6 +1246,11 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
 
 .opiniones {
   margin-top: 20px;
+}
+@media (width: 768px) {
+  .opiniones {
+    display: none;
+  }
 }
 .opiniones h2::after {
   content: "";
@@ -1780,7 +1802,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 @media (max-width: 768px) {

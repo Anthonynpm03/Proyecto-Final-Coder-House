@@ -74,7 +74,7 @@ body{
                 width: 32%;
                 height: 75vh;
                 position: relative;
-                @include flex(column,nowrap,space-between,center);
+                @include flex(column,nowrap,space-around,center);
                 @media (max-width: 768px) {
                     width: 47%;
                     margin-top: 60px;
