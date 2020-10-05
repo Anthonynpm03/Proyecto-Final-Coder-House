@@ -308,7 +308,7 @@ header .navbar .navbar__menu .navbar__menuOpciones .dropdown-item:hover {
 }
 @media (max-width: 768px) {
   .bannerprincipal .bannerprincipal__capa .bannerprincipal__capaInfo .bannerprincipal__capaBotones .bannerprincipal__capaBotones--take {
-    padding: 10px 10px;
+    padding: 10px 8px;
     font-size: 14px;
     margin-bottom: 10px;
   }
@@ -1380,8 +1380,11 @@ footer .footer__copyright {
 @media (max-width: 780px) {
   .margin__nosotros .nosotros {
     height: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 150px 150px 800px 1fr;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 .margin__nosotros .nosotros__logo {
@@ -1609,6 +1612,7 @@ footer .footer__copyright {
   .picadas .picadas__tablaIngredientes {
     position: unset;
     width: 90%;
+    margin-top: 10px;
   }
 }
 .picadas .picadas__tablaIngredientes h3 {
@@ -1808,6 +1812,7 @@ body {
 @media (max-width: 768px) {
   .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard {
     width: 47%;
+    height: 400px;
     margin-top: 60px;
     margin-right: 4px;
   }
@@ -1911,6 +1916,10 @@ body {
     bottom: -40px;
   }
 }
+.quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard__cremonLight {
+  width: 80%;
+  height: 350px;
+}
 .quesos .cardsQuesos #Port-Salut {
   margin-top: 60px;
 }
@@ -1989,11 +1998,20 @@ body {
   align-items: center;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .quesos .cardsQuesos .cardquesos__semiduros .semidurosCard {
     height: 80vh;
     width: 95%;
     margin-top: 20px;
+    flex-wrap: nowrap;
+  }
+}
+@media (min-width: 451px) and (max-width: 768px) {
+  .quesos .cardsQuesos .cardquesos__semiduros .semidurosCard {
+    height: 120vh;
+    width: 50%;
+    margin-top: 20px;
+    flex-wrap: nowrap;
   }
 }
 .quesos .cardsQuesos .cardquesos__semiduros .semidurosCard .semidurosCard__titulo h4 {
@@ -2089,11 +2107,19 @@ body {
   align-items: center;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .quesos .cardsQuesos .cardquesos__duros .durosCard {
     width: 100%;
     height: 70vh;
     margin-top: 20px;
+  }
+}
+@media (min-width: 451px) and (max-width: 768px) {
+  .quesos .cardsQuesos .cardquesos__duros .durosCard {
+    height: 80vh;
+    width: 95%;
+    margin-top: 20px;
+    flex-wrap: nowrap;
   }
 }
 .quesos .cardsQuesos .cardquesos__duros .durosCard .durosCard__titulo h4 {
@@ -2174,11 +2200,19 @@ body {
   align-items: center;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .quesos .cardsQuesos .cardquesos__duros .durosCard2 {
     width: 95%;
     height: 50vh;
     margin-top: 20px;
+  }
+}
+@media (min-width: 451px) and (max-width: 768px) {
+  .quesos .cardsQuesos .cardquesos__duros .durosCard2 {
+    height: 80vh;
+    width: 50%;
+    margin-top: 20px;
+    flex-wrap: nowrap;
   }
 }
 .quesos .cardsQuesos .cardquesos__duros .durosCard2 .durosCard2__titulo h4 {

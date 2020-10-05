@@ -16,8 +16,7 @@
         background-color: white;
         @media (max-width: 780px){
             height: 100%;
-            grid-template-columns: 100%;
-            grid-template-rows: 150px 150px 800px 1fr;
+            @include flex(column,wrap,center,center);
         }
     }
     .nosotros__logo{
