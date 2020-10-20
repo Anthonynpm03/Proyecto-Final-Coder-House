@@ -1,0 +1,186 @@
+.ingreso{
+    background-color: #fbfbff;
+    width: 80%;
+    height: 0vh;
+    @include flex(row,wrap,space-evenly,flex-start);
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 60vh;
+    }
+    .formIngreso{
+        margin-top: 10px;
+        margin-left: 40px;
+        height: 300px;
+        width: 40%;
+        background-color: white;
+        @media (max-width: 768px) {
+            width: 80%;
+        }
+        p{
+            text-align: center;
+            color: #6d6e6e;
+            margin-bottom: 5px;
+        }
+        form{
+            @include flex(column,nowrap,space-between,flex-start);
+            height: 100%;
+            background-color: #fbfbff;
+            .inputEmail{
+                margin-bottom: 15px;
+            }
+            input{
+                width: 100%;
+                font-size: 16px;
+                padding: 4px;
+                border-radius: 6px;
+                border: 1px solid rgba(0,0,0,0.4);
+            }
+            label{
+                color: $colorPrincipal;
+                font-size: 18px;
+            }
+            .checkboxIngreso{
+                margin-top: 15px;
+                margin-bottom: 10px;
+                width: 100%;
+                position: relative;
+                @include flex(row,nowrap,flex-start,center);
+                input{
+                    width: 10%;
+                }
+                a{
+                    padding: 4px 16px;
+                    color: $colorPrincipal;
+                    font-size: 18px;
+                    font-weight: bold;
+                    border: 1px solid $colorPrincipal;
+                    border-radius: 6px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 2px;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        color: white;
+                        background-color: $colorPrincipal;
+                        text-decoration: none;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }   
+        } 
+        .ingreso__opciones{
+            height: 100%;
+            li{
+                padding: 4px 6px;
+                letter-spacing: 1px;
+                border: 1px solid $colorPrincipal;
+                border-radius: 4px;
+                margin-bottom: 10px;
+                transition: all 0.5s ease;
+                a{
+                    color: $colorPrincipal;
+                    font-weight: bold;
+                    i{
+                        font-size: 24px;
+                        color: #3b5998;
+                        padding: 4px 8px;
+                        border-radius: 4px;
+                    }
+                    .fa-google{
+                        color: #c33b2d;
+                    }  
+                }
+            }
+            .ingreso__opciones--fb{
+                &:hover{
+                    background-color: $colorPrincipal;
+                    transition: all 0.5s ease;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        transition: all 0.5s ease;
+                    }
+                    i{
+                        background-color: white;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+            .ingreso__opciones--google{
+                &:hover{
+                    background-color: $colorPrincipal;
+                    transition: all 0.5s ease;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        transition: all 0.5s ease;
+                    }
+                    i{
+                        background-color: white;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+           
+        }  
+    }
+    .ingreso__eslogan{
+        width: 40%;
+        margin-top: 20px;
+        margin-left: 10px;
+        @media (max-width: 768px) {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 0px;
+        }
+        p{
+            font-size: 38px;
+            text-align: center;
+            color: $colorPrincipal;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+            font-weight: bold;
+            @media (max-width: 768px) {
+                font-size: 24px;
+            }
+        }
+    }
+}
+.ingresoFondo{
+    width: 100%;
+    height: 89vh;
+    background-image: url(../images/fondo-ingreso.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 78%, 100% 20%, 100% 100%, 0 100%);
+    position: relative;
+    @media (max-width: 768px) {
+        height: 40vh;
+        clip-path: polygon(0 40%, 100% 15%, 100% 100%, 0 100%);
+    }
+    ul{
+        width: 200px;
+        height: 80px;
+        position: absolute;
+        bottom: 35px;
+        right: 30px;
+        margin-bottom: 0;
+        @include flex(row,wrap,center,flex-end);
+        li{
+            margin-left: 5px;
+            animation: rotar 2s infinite linear;
+            transition: all 0.5s ease;
+            a{
+                color: $colorSecundario;
+                font-size: 48px;
+            }
+            &:hover{
+                animation: none;
+                transform: scale(1.2);
+                transition: all 0.5s ease;
+            }
+        }
+        
+    }
+}

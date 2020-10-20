@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!---WOW/ANIMATE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!---MIS ESTILOS-->
+    <link rel="stylesheet" href="CSS/main.CSS">
+    <title>Queseriademisinti/Nosotros</title>
+    
+</head>
+
+<body>
+                    <!---LOGO-->
+    <header>
+    <section class="navbar">
+                    <!---REDES-->
+        <nav class="navbar__redes">
+            <ul>
+                <li><a target="_blank" href="https://www.instagram.com/queseria.demisinti.jonte4411/?hl=es-la"><i class="fab fa-instagram"></i></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/Queser%C3%ADa-De-Mi-Sin-Ti-1490858717821834"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a target="_blank" class="menu__mobile" href="#modalMobile"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+                    <!---BARRA DE BUSQUEDA-->
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>  
+                    <!---MENU NAVBAR-->
+        <nav class="navbar__menu">
+            <ul class="navbar__menuIngreso">
+                <li><a target="_blank" href="ingreso.html">Ingresa</a></li>
+                <li><a target="_blank" href="registro.html">Registrate</a></li>
+                <li><a target="_blank" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+             <ul class="navbar__menuOpciones">
+                <li class="navbar__menuOpcionItem"><a target="_blank" href="index.html">Inicio</a></li>
+                <li class="navbar__menuOpcionItem"><a target="_blank" href="nosotros.html">Nosotros</a></li>
+                <li>
+                    <div class="dropdown">
+                        <span class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Menu
+                        </span>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a target="_blank" class="dropdown-item" href="fiambres.html">Fiambres</a>
+                          <a target="_blank" class="dropdown-item" href="quesos.html">Quesos</a>
+                          <a target="_blank" class="dropdown-item" href="picadas.html">Picadas</a>
+                          <a target="_blank" class="dropdown-item" href="vinos.html">Vinos</a>
+                          <a target="_blank" class="dropdown-item" href="gourmet.html">Gourmet</a>
+                        </div>
+                      </div>
+                </li>
+                <li class="navbar__menuOpcionItem"><a target="_blank" href="contacto.html">Contacto</a></li>
+            </ul> 
+        </nav> 
+    </section>
+     <!---MODAL MENU MOBILE-->
+     <section id="modalMobile">
+      <a class="modalMobile__Close" href="#"><i class="fas fa-times"></i></a>
+      <ul class="modalMobile__menu">
+          <li><a target="_blank" href="index.html">Inicio</a></li>
+          <li><a target="_blank" href="ingreso.html">Ingresar</a></li>
+          <li><a target="_blank" href="registro.html">Registrate</a></li>
+          <li>
+            <div class="dropdown">
+                <span class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Menu
+                </span>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a target="_blank" class="dropdown-item" href="fiambres.html">Fiambres</a>
+                  <a target="_blank" class="dropdown-item" href="quesos.html">Quesos</a>
+                  <a target="_blank" class="dropdown-item" href="picadas.html">Picadas</a>
+                  <a target="_blank" class="dropdown-item" href="vinos.html">Vinos</a>
+                  <a target="_blank" class="dropdown-item" href="gourmet.html">Gourmet</a>
+                </div>
+              </div>
+        </li>
+          <li><a target="_blank" href="contacto.html">Contacto</a></li>
+          <li><a target="_blank" href="nosotros.html">Nosotros</a></li>
+      </ul>
+  </section>
+  </header>
+
+  <section class="ingreso">
+      <div class="formIngreso" >
+        <p>Si no estas registrado, hace clic <a target="_blank" href="registro.html">aca</a>!</p>
+        <form action="#">
+            <label for="usuario">Direccion de Email</label>
+            <input class="inputEmail" type="text" name="email" placeholder="Ejemplo@gmail.com">
+            <label for="usuario">Contraseña</label>
+            <input type="text" name="contraseña" placeholder="**********">
+            <div class="checkboxIngreso">
+                <input type="checkbox" name="recordarme">
+                <label for="recordarme">Recordarme</label>
+                <a href="#">Ingresar</a>
+            </div>
+            <ul class="ingreso__opciones">
+                <li class="ingreso__opciones--fb"><a href="#"><span><i class="fab fa-facebook-square"></i></span> CONTINUA CON FACEBOOK</a></li>
+                <li class="ingreso__opciones--google"><a href="#"><span><i class="fab fa-google"></i></span> CONTINUA CON GOOGLE</a></li>
+            </ul>
+        </form>
+      </div>
+      <div class="ingreso__eslogan">
+        <p>PREPARATE, NO PODRAS DEJAR DE PROBAR!</p>
+      </div>
+    </section>
+
+    <div class="ingresoFondo">
+    <ul>
+        <li><a href="https://www.instagram.com/queseria.demisinti.jonte4411/?hl=es-la"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/Queser%C3%ADa-De-Mi-Sin-Ti-1490858717821834"><i class="fab fa-facebook-square"></i></a></li>
+    </ul>
+    </div>
+  
+  
+
+<!---FOOTER-->
+    <footer>
+      <section class="footer__aliados">
+          <ul>
+              <li><img src="images/marcas/bierzo-logo.png" alt=""></li>
+              <li><img src="images/marcas/cagnoli-logo.png" alt=""></li>
+              <li><img src="images/marcas/tonutti-logo.png" alt=""></li>
+              <li><img src="images/marcas/42-logo.jpg" alt=""></li>
+              <li><img src="images/marcas/artesano-png.jpg" alt=""></li>
+              <li><img src="images/marcas/barraza-logo.png" alt=""></li>
+              <li><img src="images/marcas/bocatti-logo.jpg" alt=""></li>
+              <li><img src="images/marcas/montesano-logo.png" alt=""></li>
+              <li><img src="images/marcas/mozzari-logo.png" alt=""></li>
+              <li><img src="images/marcas/paulina-logo.jpg" alt=""></li>
+              <li><img src="images/marcas/puntadelagua-logo.png" alt=""></li>
+              <li><img src="images/marcas/serenisima-logo.png" alt=""></li>
+              <li><img src="images/marcas/Signorello-logo.png" alt=""></li>
+              <li><img src="images/marcas/tregar-logo7.jpg" alt=""></li>
+              <li><img src="images/marcas/veronica-logo.png" alt=""></li>
+              <li><img src="images/marcas/vidal-logo.png" alt=""></li>
+          </ul>
+      </section>
+      <section class="footer__information">  
+          <ul>
+              <h4>Categorias</h4>
+              <li>Vinos</li>
+              <li>Fiambres</li>
+              <li>Quesos</li>
+              <li>Gourmet</li>
+              <li>Tablas</li>
+          </ul>
+          <div>
+          <h4>Tu cuenta</h4>
+          <a target="_blank" href="ingreso.html">Ingresa</a>
+          </div>
+          <h4> <a target="_blank" href="contacto.html">Locales</a> </h4>
+      </section>
+  
+      <section class="footer__copyright">
+          <div>
+              <h4> <a href="index.html">QUESERIA DE MI SIN TI</a></h4>
+              <p>HORARIO DE ATENCION: LUNES A VIERNES DE 9:00 - 13:30 Y DE 17:00 A 20:00 SABADOS ABRIMOS TODO EL DIA DE 9:00 A 20:00HRS</p>
+              <p>Copyright 2020 - Anthony Perez</p>
+          </div> 
+      </section>
+  </footer>
+</div>
+<!---WOW-->
+<script src="JS/wow.min.js"></script>
+<script> new WOW().init(); </script>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> 
+</body>
+</html>

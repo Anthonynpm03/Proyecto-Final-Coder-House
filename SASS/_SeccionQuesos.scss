@@ -159,6 +159,7 @@ body{
                     background-color: $colorPrincipal;
                     color: White;
                     font-weight: bold;
+                    cursor: pointer;
                     @media (max-width: 768px) {
                         right: 25%;
                         bottom: -40px;
@@ -298,6 +299,7 @@ body{
                     background-color: $colorPrincipal;
                     color: White;
                     font-weight: bold;
+                    cursor: pointer;
                     @media (max-width: 768px) {
                         right: 10px;
                         bottom: 6px;
@@ -383,6 +385,7 @@ body{
                     background-color: $colorPrincipal;
                     color: White;
                     font-weight: bold;
+                    cursor: pointer;
                     @media (max-width: 768px) {
                         right: 5px;
                         bottom: 5px;
@@ -460,6 +463,7 @@ body{
                     background-color: $colorPrincipal;
                     color: White;
                     font-weight: bold;
+                    cursor: pointer;
                 }
             }
         }
@@ -551,6 +555,7 @@ body{
                         background-color: $colorPrincipal;
                         color: White;
                         font-weight: bold;
+                        cursor: pointer;
                     }
                 }
             }

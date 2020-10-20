@@ -3,6 +3,9 @@
     height: 75vh;
     background-image: url(../images/banner_grande.jpg);
     @include BgImage(cover, center, no-repeat);
+    @media (min-width: 769px) and (max-width: 1024px) {
+        height: 40vh;
+    }
     .bannerprincipal__capa{
         width: 100%;
         height: 100%;

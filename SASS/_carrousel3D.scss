@@ -46,6 +46,11 @@
                         background-color: rgba(0, 0, 0, 0.3);
                     }
                 }
+                a{
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
                 &:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
                 &:nth-child(2){transform: rotateY(36deg) translateZ(300px);}
                 &:nth-child(3){transform: rotateY(72deg) translateZ(300px);}

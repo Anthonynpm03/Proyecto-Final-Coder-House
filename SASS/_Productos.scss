@@ -61,6 +61,7 @@
         grid-template-columns: 40% 60%;
         grid-template-rows: 12% repeat(3, 25%) 12%;
         @media (max-width: 768px) {
+            width: 80%;
             margin-left: 0px;
             margin: auto;
             grid-template-columns: 100%;
@@ -70,10 +71,25 @@
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            width: 50%;
+            height: 650px;
+            margin-left: 0px;
+            margin: auto;
+            grid-template-columns: 100%;
+            grid-template-rows: 40% 60%;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 4px $colorShadowNegro;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
         .card__productosImg{
             grid-area: 1/1/6/2;
             @media (max-width: 768px) {
                 grid-area: unset;
+            }
+            @media (min-width: 769px) and (max-width: 1024px) {
+               grid-area: unset;
             }
             img{
                 width: 100%;
@@ -105,7 +121,10 @@
                     grid-area: unset;
                     background-color: #fbfbff;
                 }
-
+                @media (min-width: 769px) and (max-width: 1024px) {
+                    grid-area: unset;
+                    background-color: #fbfbff;
+                 }
                 h2{
                     font-size: 40px;
                     @media (max-width: 768px) {
@@ -130,6 +149,11 @@
                         position: unset;
                         margin-bottom: 5px;
                     }
+                    @media (min-width: 769px) and (max-width: 1024px) {
+                        position: unset;
+                        margin-bottom: 5px;
+                        
+                     }
                 }
         }
        
@@ -141,11 +165,18 @@
         @media (max-width: 768px) {
             margin-right: 0px;
         }
+        @media (max-width: 1024px) {
+            width: 100%;
+            margin-right: 0px;
+        }
         .card__productosImg2{
             grid-area: 1/1/6/2;
             @media (max-width: 768px) {
                 grid-area: unset;
             }
+            @media (min-width: 769px) and (max-width: 1024px) {
+                grid-area: unset;
+             }
             img{
                 width: 100%;
                 height: 100%;
@@ -170,6 +201,10 @@
                     grid-area: unset;
                     background-color: #fbfbff;
                 }
+                @media (min-width: 769px) and (max-width: 1024px) {
+                    grid-area: unset;
+                    background-color: #fbfbff;
+                 }
                 h2{
                     font-size: 40px;
                     @media (max-width: 768px) {
@@ -188,14 +223,17 @@
                     }
                 }
                 a{
-                   @extend %btn-producto;
-                    left: 10px;
+                    @extend %btn-producto;
+                        left: 10px;
                     @media (max-width: 768px) {
                         position: unset;
                         margin-bottom: 5px;
                     }
-                    
+                    @media (min-width: 769px) and (max-width: 1024px) {
+                        position: unset;
+                        margin-bottom: 5px; 
+                    }
                 }
             }
         }
-}
+    }

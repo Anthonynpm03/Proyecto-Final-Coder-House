@@ -1,0 +1,202 @@
+.banner__fiambres{
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    .banner__fiambresCapa{
+        width: 70%;
+        height: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+            clip-path: polygon(0 0, 100% 0, 32% 100%, 0 100%);
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+        .banner__fiambresTexto{
+            height: 100%;
+            width: 50%;
+            @include flex(column,wrap,center,flex-end);
+            margin-top: 30px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            @media (max-width: 768px) {
+                width: 100vw;
+                position: unset;
+                background-image: url(../images/fiambres/fiambrescompletos.jpg);
+                margin-top: 0px;
+            }
+            .banner__fiambresTextoCapa{
+                @media (max-width: 768px) {
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    @include flex(column,wrap,center,center);
+                }
+                h2{
+                    @extend %titulosSecciones;
+                    width: 80%;
+                    text-align: center;
+                    font-size: 48px;
+                }
+                p{
+                    width: 80%;
+                    color: rgba(0, 0, 0, 0.7);
+                    font-size: 24px;
+                    text-align: center;
+                    margin-top: 10px;
+                    @media (max-width: 768px) {
+                        color: white;
+                        font-weight: bold;
+                        font-size: 32px;
+                    }
+    
+                }
+                ul{
+                    width: 100%;
+                    text-align: left;
+                    margin-bottom: 0px;
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
+                    li{
+                        margin-bottom: 10px;
+                        color: $colorPrincipal;
+                        font-weight: bold;
+                        font-size: 30px;
+                        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+                        letter-spacing: 2px;
+                    }
+                    .li1{
+                        margin-left: 70%;
+                        animation-delay: 0.5s;
+                    }
+                    .li2{
+                        margin-left: 40%;
+                        animation-delay: 1s;
+                    }
+                    .li3{
+                        margin-left: 25%;
+                        animation-delay: 1.5s;
+                    }
+                    .li4{
+                        margin-left: 15%;
+                        animation-delay: 2s;
+                    }
+                    .li5{
+                        margin-left: 0%;
+                        animation-delay: 2.5s;
+                    }
+                    .li6{
+                        margin-left: -20%;
+                        animation-delay: 3s;
+                    }
+                }
+            }
+        }
+    }
+   
+    
+}
+.Contenedor__fiambresCards{
+    width: 90%;
+    margin: auto;
+    @include flex(row,wrap,space-evenly,center);
+    padding: 20px;
+    margin-top: 20px;
+    .FimbreCard{
+        height: 350px;
+        width: 200px;
+        margin-top: 25px;
+        @include flex(column,wrap,space-between,center);
+        border-radius: 18px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+        transition: 0.5s ease;
+        cursor: pointer;
+        &:hover{
+            transform: translateY(-15px);
+            box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.8);
+        }
+        
+        .FiambreCard__img{
+            @include BgImage(cover,center,no-repeat);
+            @include flex(column,wrap,center,center);
+            width: 100%;
+            height: 60%;
+            border-top-right-radius: 16px;
+            border-top-left-radius: 16px;
+            &:hover .FiambreCard__span{
+                visibility: visible;
+            }
+        }
+        .crudo{
+            background-image: url(../images/fiambres/crudo-español.jpg);
+        }
+        .bresaola{
+            background-image: url(../images/fiambres/bresaola.jpg);
+        }
+        .pastron{
+            background-image: url(../images/fiambres/pastron.jpg);
+        }
+        .jamon{
+            background-image: url(../images/fiambres/jamon.jpg);
+        }
+        .lomito{
+            background-image: url(../images/fiambres/lomito.jpg);
+        }
+        .salame{
+            background-image: url(../images/fiambres/salame.jpg);
+        }
+        .queso{
+            background-image: url(../images/fiambres/queso.jpg);
+        }
+        .FiambreCard__span{
+            width: 100%;
+            height: 100%;
+            border-top-right-radius: 16px;
+            border-top-left-radius: 16px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4));
+            @include flex(column,wrap,center,center);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            visibility: hidden;
+            &:hover span{
+                transform: scale(1.2);
+                transition: all 0.3s ease;
+            }
+            span{
+                transition: all 0.3s ease;
+            }
+        }
+        .FiambreCardText{
+            height: 25%;
+            width: 100%;
+            text-align: center;
+            @include flex(column,wrap,center,center);
+            h3{
+                color: $colorPrincipal;
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+        a{
+            text-align: center;
+            width: 100%;
+            height: 15%;
+            padding: 8px;
+            color: #d2d2d2;
+            font-weight: bold;
+            background-color: $colorPrincipal;
+            border-bottom-right-radius:18px;
+            border-bottom-left-radius: 18px;
+            &:hover{
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+    }
+}

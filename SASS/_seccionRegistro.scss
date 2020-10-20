@@ -1,0 +1,317 @@
+.registro{
+    height: 90vh;
+    width: 100%;
+    background-color: #fff;
+    @include flex(row,wrap,space-between,center);
+    @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+    .registroForm{
+        width: 60%;
+        height: 100%;
+        background-color: white;
+        @include flex(column,wrap,center,center);
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+        @media (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        form{
+            @include flex(column,wrap,space-around,flex-start);
+            width: 100%;
+            margin: auto;
+            padding: 0px 20px;
+            @media (max-width: 768px) {
+                margin-bottom: 10px;
+            }
+            input{
+                border-radius: 6px;
+                border: 1px solid rgba(0,0,0,0.4);
+                padding: 5px;
+                outline: none;
+            }
+            label{
+                color: $colorPrincipal;
+                font-weight: bold;
+            }
+            small{
+                color: $colorPrincipal;
+            }
+            .registroForm__nombreytlf{
+                @include flex(row,wrap,flex-start,center);
+                width: 100%;
+                .registroForm__nombre{
+                    @include flex(column,wrap,space-evenly,flex-start);
+                    width: 60%;
+                    @media (max-width: 768px) {
+                        width: 50%;
+                    }
+                    .nombre__Yapellido{
+                        @include flex(row,wrap,space-between,center);
+                        width: 80%;
+                        .nombre{
+                            @include flex(column,wrap,flex-start,flex-start);
+                            width: 40%;
+                            input{
+                                width: 100%;
+                            }
+                        }
+                        .apellido{
+                            @include flex(column,wrap,flex-start,flex-start);
+                            width: 50%;
+                            input{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .registroForm__tlf{
+                    @include flex(column,wrap,space-evenly,flex-start);
+                    width: 40%;
+                    @media (max-width: 768px) {
+                        width: 50%;
+                    }
+                    label{
+                        margin-left: 10px;
+                    }
+                    .codigo__Ytlf{
+                        @include flex(row,wrap,space-evenly,center);
+                        width: 80%;
+                        .codArea{
+                            @include flex(column,wrap,flex-start,flex-start);
+                            width: 30%;
+                            @media (max-width: 768px) {
+                                width: 40%;
+                            }
+                            input{
+                                width: 100%;
+                            } 
+                        }
+                        .tlf{
+                            @include flex(column,wrap,flex-start,flex-start);
+                            width: 60%;
+                            @media (max-width: 768px) {
+                                width: 55%;
+                            }
+                            input{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .registroForm__emailytlf{
+                @include flex(row,wrap,center,center);
+                width: 100%;
+                .emailytlf__email{
+                    @include flex(column,wrap,space-evenly,flex-start);
+                    width: 60%;
+                    @media (max-width: 768px) {
+                        width: 50%;
+                    }
+                    input{
+                        width: 80%;
+                    }
+                }
+                .emailytlf__tlfcasa{
+                    @include flex(column,wrap,space-evenly,flex-start);
+                    width: 40%;
+                    @media (max-width: 768px) {
+                        width: 50%;
+                    }
+                    label{
+                        margin-left: 10px;
+                    }
+                    .codigo__Ytlfcasa{
+                        @include flex(row,wrap,space-evenly,center);
+                        width: 80%;
+                        .codAreacasa{
+                            @include flex(column,wrap,flex-start,flex-start);
+                            width: 30%;
+                            @media (max-width: 768px) {
+                                width: 40%;
+                            }
+                            input{
+                                width: 100%;
+                            }
+                        }
+                        .tlfcasa{
+                            @include flex(column,wrap,flex-start,flex-start);
+                            width: 60%;
+                            @media (max-width: 768px) {
+                                width: 55%;
+                            }
+                            input{
+                                width: 100%;
+                            }
+                        }
+                    } 
+                }
+            }
+            .contraseña{
+                @include flex(column,wrap,space-evenly,flex-start);
+                width: 60%;
+                input{
+                    width: 80%;
+                }
+            }
+            .direccion{
+                @include flex(column,wrap,space-evenly,flex-start);
+                width: 100%;
+                .direccioncompleta{
+                    @include flex(row,wrap,space-between,center);
+                    width: 90%;
+                    .direccion__calle{
+                        @include flex(column,wrap,space-evenly,flex-start);
+                        width: 60%;
+                        input{
+                            width: 90%;
+                        } 
+                    }
+                    .direccion__altura{
+                        @include flex(column,wrap,space-evenly,flex-start);
+                        width: 10%;
+                        input{
+                            width: 100%;
+                        }
+                    }
+                    .direccion__dpto{
+                        @include flex(column,wrap,space-evenly,flex-start);
+                        width: 10%;
+                        input{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .Captcha{
+                width: 100%;
+                padding: 10px;
+                @include flex(row,wrap,center,center);
+            }
+            .registro__boton{
+                width: 100%;
+                @include flex(row,wrap,center,center);
+                a{
+                    width: 60%;
+                    text-align: center;
+                    padding: 4px 16px;
+                    color: $colorPrincipal;
+                    font-size: 18px;
+                    font-weight: bold;
+                    border: 1px solid $colorPrincipal;
+                    border-radius: 6px;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        color: white;
+                        background-color: $colorPrincipal;
+                        text-decoration: none;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+        }
+    }
+    .registro__otros{
+        width: 30%;
+        height: 100%;
+        @include flex(column,wrap,space-between,center);
+        text-align: center;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        .colorsuperior{
+            height: 15%;
+            width: 100%;
+            background: linear-gradient(#6b0b0b, #f93f3f);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 100%);
+        }
+        .indicacion{
+            height: 40%;
+            @include flex(column,wrap,center,center);
+            h2{
+                color: $colorPrincipal;
+                letter-spacing: 5px;
+                font-weight: bold;
+                text-shadow: 2px 2px 1px rgba(0,0,0,0.4);
+                animation-delay: 1s;
+                @media (max-width: 768px) {
+                    animation: none;
+                    font-size: 30px;
+                }
+            }
+            
+        }
+        ul{
+            height: 30%;
+            li{
+                padding: 4px 6px;
+                letter-spacing: 1px;
+                border: 1px solid $colorPrincipal;
+                border-radius: 4px;
+                margin-bottom: 10px;
+                transition: all 0.5s ease;
+                a{
+                    color: $colorPrincipal;
+                    font-weight: bold;
+                    i{
+                        font-size: 24px;
+                        color: #3b5998;
+                        padding: 4px 8px;
+                        border-radius: 4px;
+                    }
+                    .fa-google{
+                        color: #c33b2d;
+                    }  
+                }
+            }
+            .ingreso__opciones--fb{
+                animation-delay: 2s;
+                &:hover{
+                    background-color: $colorPrincipal;
+                    transition: all 0.5s ease;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        transition: all 0.5s ease;
+                    }
+                    i{
+                        background-color: white;
+                        transition: all 0.5s ease;
+                    }
+                }
+                @media (max-width: 768px) {
+                    animation: none;
+                }
+            }
+            .ingreso__opciones--google{
+                animation-delay: 4s;
+                &:hover{
+                    background-color: $colorPrincipal;
+                    transition: all 0.5s ease;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        transition: all 0.5s ease;
+                    }
+                    i{
+                        background-color: white;
+                        transition: all 0.5s ease;
+                    }
+                }
+                @media (max-width: 768px) {
+                    animation: none;
+                }
+            }
+        }
+        .colorinferior{
+            height: 15%;
+            width: 100%;
+            background: linear-gradient(#6b0b0b, #f93f3f);
+            clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+}
