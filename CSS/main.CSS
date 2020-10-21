@@ -2481,6 +2481,7 @@ body {
   background-color: #fbfbff;
   width: 80%;
   height: 0vh;
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -2492,7 +2493,7 @@ body {
     flex-direction: column-reverse;
     flex-wrap: nowrap;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
   }
 }
 .ingreso .formIngreso {
@@ -2505,7 +2506,8 @@ body {
 @media (max-width: 768px) {
   .ingreso .formIngreso {
     width: 80%;
-    height: 350px;
+    height: 400px;
+    margin-top: 10px;
   }
 }
 .ingreso .formIngreso p {
@@ -2519,7 +2521,7 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  height: 100%;
+  height: 85%;
   background-color: #fbfbff;
 }
 .ingreso .formIngreso form .inputEmail {
@@ -2569,7 +2571,7 @@ body {
   transition: all 0.5s ease;
 }
 .ingreso .formIngreso .ingreso__opciones {
-  height: 100%;
+  height: 15%;
 }
 .ingreso .formIngreso .ingreso__opciones li {
   padding: 4px 6px;
