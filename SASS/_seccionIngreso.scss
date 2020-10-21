@@ -18,7 +18,7 @@
         background-color: white;
         @media (max-width: 768px) {
             width: 80%;
-            height: 400px;
+            height: 70vh;
             margin-top: 10px;
         }
         p{
@@ -159,7 +159,7 @@
     clip-path: polygon(0 78%, 100% 20%, 100% 100%, 0 100%);
     position: relative;
     @media (max-width: 768px) {
-        height: 30vh;
+        height: 25vh;
         clip-path: polygon(0 40%, 100% 15%, 100% 100%, 0 100%);
     }
     ul{

@@ -2506,7 +2506,7 @@ body {
 @media (max-width: 768px) {
   .ingreso .formIngreso {
     width: 80%;
-    height: 400px;
+    height: 70vh;
     margin-top: 10px;
   }
 }
@@ -2657,7 +2657,7 @@ body {
 }
 @media (max-width: 768px) {
   .ingresoFondo {
-    height: 30vh;
+    height: 25vh;
     -webkit-clip-path: polygon(0 40%, 100% 15%, 100% 100%, 0 100%);
             clip-path: polygon(0 40%, 100% 15%, 100% 100%, 0 100%);
   }
