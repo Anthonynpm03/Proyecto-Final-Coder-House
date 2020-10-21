@@ -2505,6 +2505,7 @@ body {
 @media (max-width: 768px) {
   .ingreso .formIngreso {
     width: 80%;
+    height: 350px;
   }
 }
 .ingreso .formIngreso p {
