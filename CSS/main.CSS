@@ -2657,7 +2657,7 @@ body {
 }
 @media (max-width: 768px) {
   .ingresoFondo {
-    height: 40vh;
+    height: 30vh;
     -webkit-clip-path: polygon(0 40%, 100% 15%, 100% 100%, 0 100%);
             clip-path: polygon(0 40%, 100% 15%, 100% 100%, 0 100%);
   }
