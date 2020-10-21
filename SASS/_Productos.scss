@@ -54,11 +54,11 @@
     padding: 10px 0px;
     width: 100%;
     .card__productos{
-        width: 80%;
+        width: 90%;
         margin-left:50px;
         margin-top: 30px;
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: repeat(10, 10%);
         grid-template-rows: 12% repeat(3, 25%) 12%;
         @media (max-width: 768px) {
             width: 80%;
@@ -84,7 +84,7 @@
             border-top-right-radius: 20px;
         }
         .card__productosImg{
-            grid-area: 1/1/6/2;
+            grid-area: 1/1/6/5; 
             @media (max-width: 768px) {
                 grid-area: unset;
             }
@@ -108,7 +108,7 @@
             }
             }
             .card__productosText{
-                grid-area: 2/2/5/3;
+                grid-area: 2/5/5/11;
                 padding: 0px 10px;
                 background-color: #00000036;
                 border-top-right-radius: 10px;
@@ -165,12 +165,12 @@
         @media (max-width: 768px) {
             margin-right: 0px;
         }
-        @media (max-width: 1024px) {
+        @media (min-width: 769px) and (max-width: 1024px) {
             width: 100%;
             margin-right: 0px;
         }
         .card__productosImg2{
-            grid-area: 1/1/6/2;
+            grid-area: 1/7/6/11;
             @media (max-width: 768px) {
                 grid-area: unset;
             }
@@ -188,7 +188,7 @@
                     }
                 }
             .card__productosText2{
-                grid-area: 2/2/5/3;
+                grid-area: 2/1/5/7;
                 padding: 0px 10px;
                 background-color: #00000036;
                 border-top-left-radius: 10px;
