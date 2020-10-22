@@ -167,8 +167,10 @@ body{
                 }
             }
             .cremososCard__cremonLight{
-                width: 80%;
-                height: 350px;
+                @media (max-width: 768px) {
+                    width: 80%;
+                    height: 350px;
+                }
             }
         }
         #Port-Salut{

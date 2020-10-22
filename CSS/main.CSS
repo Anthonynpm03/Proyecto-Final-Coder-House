@@ -2001,9 +2001,11 @@ body {
     bottom: -40px;
   }
 }
-.quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard__cremonLight {
-  width: 80%;
-  height: 350px;
+@media (max-width: 768px) {
+  .quesos .cardsQuesos .cardsQuesos__cremosos .cremososCard__cremonLight {
+    width: 80%;
+    height: 350px;
+  }
 }
 .quesos .cardsQuesos #Port-Salut {
   margin-top: 60px;
@@ -3556,7 +3558,7 @@ body {
   visibility: visible;
 }
 .Contenedor__fiambresCards .FimbreCard .crudo {
-  background-image: url(../images/fiambres/crudo-español.jpg);
+  background-image: url(../images/fiambres/crudo.jpg);
 }
 .Contenedor__fiambresCards .FimbreCard .bresaola {
   background-image: url(../images/fiambres/bresaola.jpg);
